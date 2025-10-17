@@ -78,7 +78,10 @@ cp config/discourse_config.yaml.example config/discourse_config.yaml
 
 - **Дорожная карта проекта:** [docs/PROJECT_ROADMAP.md](docs/PROJECT_ROADMAP.md)
 - **Установка и настройка:** [INSTALL.md](INSTALL.md)
+- **Тестирование парсера:** [docs/TESTING.md](docs/TESTING.md)
+- **WIX селекторы:** [docs/WIX_SELECTORS.md](docs/WIX_SELECTORS.md)
 - **Настройка VPS:** [docs/VPS_SETUP.md](docs/VPS_SETUP.md)
+- **Следующие шаги:** [docs/NEXT_STEPS.md](docs/NEXT_STEPS.md)
 
 ## 🛠️ Технологии
 

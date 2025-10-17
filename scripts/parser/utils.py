@@ -87,18 +87,24 @@ def extract_text_from_html(html: str) -> str:
     return clean_text(text)
 
 
-def parse_date(date_string: str) -> Optional[datetime]:
+def parse_date(date_string: str, current_year: int = None) -> Optional[datetime]:
     """
-    Парсинг даты из различных форматов
+    Парсинг даты из различных форматов, включая WIX формат
     
     Args:
         date_string: Строка с датой
+        current_year: Текущий год (по умолчанию берется из системы)
         
     Returns:
         Объект datetime или None
     """
     if not date_string:
         return None
+    
+    if current_year is None:
+        current_year = datetime.now().year
+    
+    date_string = date_string.strip()
     
     # Список возможных форматов даты
     date_formats = [
@@ -110,17 +116,115 @@ def parse_date(date_string: str) -> Optional[datetime]:
         "%d/%m/%Y",
         "%B %d, %Y",  # October 17, 2025
         "%b %d, %Y",  # Oct 17, 2025
+        "%B %d",      # October 17 (без года)
+        "%b %d",      # Oct 17 (без года) - формат WIX!
     ]
     
     for fmt in date_formats:
         try:
-            return datetime.strptime(date_string.strip(), fmt)
+            parsed_date = datetime.strptime(date_string, fmt)
+            
+            # Если формат не содержит года, добавить текущий год
+            if "%Y" not in fmt:
+                parsed_date = parsed_date.replace(year=current_year)
+            
+            return parsed_date
         except ValueError:
             continue
     
-    # Если ни один формат не подошел, попробовать относительные даты
-    # "5 дней назад", "2 hours ago", etc.
-    # TODO: Реализовать парсинг относительных дат
+    # Парсинг относительных дат
+    # "5 дней назад", "2 hours ago", "yesterday", etc.
+    lower_text = date_string.lower()
+    
+    # Английские относительные даты
+    if 'ago' in lower_text or 'yesterday' in lower_text or 'today' in lower_text:
+        return _parse_relative_date_en(date_string)
+    
+    # Русские относительные даты
+    if 'назад' in lower_text or 'вчера' in lower_text or 'сегодня' in lower_text:
+        return _parse_relative_date_ru(date_string)
+    
+    return None
+
+
+def _parse_relative_date_en(date_string: str) -> Optional[datetime]:
+    """Парсинг английских относительных дат"""
+    from datetime import timedelta
+    
+    now = datetime.now()
+    lower_text = date_string.lower()
+    
+    if 'just now' in lower_text or 'now' in lower_text:
+        return now
+    
+    if 'yesterday' in lower_text:
+        return now - timedelta(days=1)
+    
+    if 'today' in lower_text:
+        return now
+    
+    # Извлечь число
+    numbers = extract_numbers_from_text(date_string)
+    if not numbers:
+        return None
+    
+    value = numbers[0]
+    
+    if 'second' in lower_text or 'sec' in lower_text:
+        return now - timedelta(seconds=value)
+    elif 'minute' in lower_text or 'min' in lower_text:
+        return now - timedelta(minutes=value)
+    elif 'hour' in lower_text or 'hr' in lower_text:
+        return now - timedelta(hours=value)
+    elif 'day' in lower_text:
+        return now - timedelta(days=value)
+    elif 'week' in lower_text:
+        return now - timedelta(weeks=value)
+    elif 'month' in lower_text:
+        return now - timedelta(days=value * 30)
+    elif 'year' in lower_text:
+        return now - timedelta(days=value * 365)
+    
+    return None
+
+
+def _parse_relative_date_ru(date_string: str) -> Optional[datetime]:
+    """Парсинг русских относительных дат"""
+    from datetime import timedelta
+    
+    now = datetime.now()
+    lower_text = date_string.lower()
+    
+    if 'только что' in lower_text or 'сейчас' in lower_text:
+        return now
+    
+    if 'вчера' in lower_text:
+        return now - timedelta(days=1)
+    
+    if 'сегодня' in lower_text:
+        return now
+    
+    # Извлечь число
+    numbers = extract_numbers_from_text(date_string)
+    if not numbers:
+        return None
+    
+    value = numbers[0]
+    
+    if 'секунд' in lower_text:
+        return now - timedelta(seconds=value)
+    elif 'минут' in lower_text:
+        return now - timedelta(minutes=value)
+    elif 'час' in lower_text:
+        return now - timedelta(hours=value)
+    elif 'дн' in lower_text or 'день' in lower_text:
+        return now - timedelta(days=value)
+    elif 'недел' in lower_text:
+        return now - timedelta(weeks=value)
+    elif 'месяц' in lower_text:
+        return now - timedelta(days=value * 30)
+    elif 'год' in lower_text or 'лет' in lower_text:
+        return now - timedelta(days=value * 365)
     
     return None
 

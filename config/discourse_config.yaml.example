@@ -1,0 +1,105 @@
+# Конфигурация для импорта в Discourse
+
+# URL Discourse форума
+discourse_url: "https://your-discourse-forum.com"
+
+# API ключ (создать в админ-панели)
+api:
+  key: "your_api_key_here"
+  username: "admin"  # пользователь от имени которого идет импорт
+
+# Настройки импорта
+import:
+  # Задержка между запросами к API (секунды)
+  delay_between_requests: 1
+  # Режим тестирования (не создавать реальные записи)
+  dry_run: false
+  # Пропустить существующие категории
+  skip_existing_categories: true
+  # Пропустить существующие топики
+  skip_existing_topics: true
+
+# Маппинг категорий WIX → Discourse
+# Можно переименовать или изменить структуру
+category_mapping:
+  "Общие вопросы": "general-questions"
+  "Q & A": "qa"
+  "BRANDS": "brands"
+  "MRTO 2022-2023-2024": "mrto"
+  "Staff Only": "staff"
+  "MONITORING": "monitoring"
+  "ISSUES LOG /// ЛОГ ПОЛОМОК": "issues-log"
+  "EQUIPMENT": "equipment"
+  "CATCHES": "catches"
+  "FLEET ORDERS": "fleet-orders"
+
+# Обработка пользователей
+users:
+  # Стратегия создания пользователей:
+  # - "single_archive": все посты от одного архивного пользователя
+  # - "create_by_name": создавать пользователей по имени
+  # - "mapping_file": использовать файл маппинга
+  strategy: "create_by_name"
+  
+  # Имя архивного пользователя (для стратегии "single_archive")
+  archive_username: "wix_archive"
+  archive_email: "archive@fisherygroup.com"
+  
+  # Префикс для импортированных пользователей
+  username_prefix: ""
+  
+  # Файл маппинга (для стратегии "mapping_file")
+  mapping_file: "./config/user_mapping.json"
+
+# Обработка контента
+content:
+  # Конвертировать HTML в Markdown
+  convert_to_markdown: true
+  
+  # Сохранять оригинальные даты постов
+  preserve_dates: true
+  
+  # Добавлять disclaimer к импортированным постам
+  add_disclaimer: true
+  disclaimer_text: |
+    ---
+    _Этот пост был импортирован со старого форума WIX. Дата оригинальной публикации: {date}_
+
+# Вложения
+attachments:
+  # Загружать вложения
+  upload_attachments: true
+  
+  # Максимальный размер файла (MB) - должен соответствовать настройкам Discourse
+  max_file_size: 50
+  
+  # Директория с вложениями из парсера
+  source_dir: "./data/attachments"
+
+# Обработка ошибок
+error_handling:
+  # Продолжать при ошибках
+  continue_on_error: true
+  
+  # Логировать проблемные записи
+  log_failed_items: true
+  failed_items_file: "./data/failed_imports.json"
+  
+  # Максимальное количество попыток
+  max_retries: 3
+  
+  # Задержка между попытками (секунды)
+  retry_delay: 5
+
+# Логирование
+logging:
+  level: "INFO"
+  file: "./logs/discourse_importer.log"
+  console: true
+
+# Статистика
+stats:
+  # Сохранять статистику импорта
+  save_stats: true
+  stats_file: "./data/import_stats.json"
+

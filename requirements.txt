@@ -1,0 +1,41 @@
+# Парсинг WIX форума
+playwright==1.41.0
+beautifulsoup4==4.12.3
+lxml==5.1.0
+requests==2.31.0
+httpx==0.26.0
+
+# Обработка данных
+pandas==2.2.0
+openpyxl==3.1.2  # для работы с Excel файлами при анализе
+
+# Конфигурация
+pyyaml==6.0.1
+python-dotenv==1.0.1
+
+# Discourse API
+python-discourse==1.2.0  # или использовать прямые requests
+
+# Утилиты
+tqdm==4.66.1  # прогресс-бары
+loguru==0.7.2  # логирование
+python-slugify==8.0.4  # для создания URL-friendly строк
+
+# Работа с датами
+python-dateutil==2.8.2
+
+# Markdown конвертация
+markdownify==0.11.6  # HTML → Markdown
+html2text==2024.2.26
+
+# Валидация
+pydantic==2.6.1
+
+# Тестирование
+pytest==8.0.0
+pytest-asyncio==0.23.4
+
+# Разработка
+ipython==8.21.0
+ipdb==0.13.13
+

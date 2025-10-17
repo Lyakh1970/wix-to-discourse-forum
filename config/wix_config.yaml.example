@@ -1,0 +1,90 @@
+# Конфигурация для парсинга WIX форума
+
+# URL форума
+forum_url: "https://www.fisherydb.com/forum/"
+
+# Авторизация (заполнить реальными данными)
+auth:
+  username: "your_username"
+  password: "your_password"
+  # Если требуется авторизация
+  required: true
+
+# Настройки парсинга
+parsing:
+  # Задержка между запросами (секунды) - чтобы избежать блокировки
+  delay_between_requests: 2
+  # Задержка между страницами
+  delay_between_pages: 5
+  # Таймаут загрузки страницы (секунды)
+  page_load_timeout: 30
+  # Headless режим браузера
+  headless: true
+  # User-Agent
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+
+# Селекторы (могут потребовать корректировки после анализа)
+selectors:
+  # Категории
+  category_list: ".category-list"
+  category_item: ".category-item"
+  category_title: ".category-title"
+  
+  # Подкатегории
+  subcategory_list: ".subcategory-list"
+  subcategory_item: ".subcategory-list-item"
+  
+  # Посты
+  post_list: ".post-list"
+  post_item: ".post-item"
+  post_title: ".post-title"
+  post_content: ".post-content"
+  post_author: ".post-author"
+  post_date: ".post-date"
+  
+  # Комментарии
+  comment_list: ".comment-list"
+  comment_item: ".comment-item"
+  
+  # Вложения
+  attachment_link: "a.PaFuZ"  # Класс для ссылок на файлы
+
+# Вложения
+attachments:
+  # Директория для сохранения
+  download_dir: "./data/attachments"
+  # Разрешенные расширения
+  allowed_extensions:
+    - ".pdf"
+    - ".docx"
+    - ".xlsx"
+    - ".jpg"
+    - ".png"
+    - ".gif"
+  # Максимальный размер файла (MB)
+  max_file_size: 100
+  # Паттерн URL файлов
+  url_pattern: "https://{uuid}.usrfiles.com/ugd/{hash}"
+
+# Экспорт данных
+export:
+  # Директория для JSON файлов
+  output_dir: "./data/exported"
+  # Формат даты
+  date_format: "%Y-%m-%d %H:%M:%S"
+  # Кодировка
+  encoding: "utf-8"
+
+# Логирование
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "./logs/wix_parser.log"
+  console: true
+
+# Ограничения для тестирования
+# (установить null для полного парсинга)
+limits:
+  max_categories: null  # null = все
+  max_posts_per_category: null  # null = все
+  max_comments_per_post: null  # null = все
+

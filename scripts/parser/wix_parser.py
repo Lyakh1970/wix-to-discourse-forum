@@ -12,7 +12,19 @@ from datetime import datetime
 
 from playwright.async_api import async_playwright, Page, Browser
 import yaml
-from loguru import logger
+from tqdm import tqdm
+
+# Настройка логирования
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('logs/parser.log', encoding='utf-8'),
+        logging.StreamHandler()
+    ]
+)
+
+logger = logging.getLogger(__name__)
 
 
 class WixForumParser:
@@ -34,31 +46,23 @@ class WixForumParser:
         self.subcategories: List[Dict] = []
         self.posts: List[Dict] = []
         
-        # Настройка логирования
-        self._setup_logging()
+        # Статистика
+        self.stats = {
+            'categories_parsed': 0,
+            'subcategories_parsed': 0,
+            'posts_parsed': 0,
+            'comments_parsed': 0,
+            'files_downloaded': 0,
+            'errors_count': 0
+        }
         
     def _load_config(self, config_path: str) -> Dict:
         """Загрузка конфигурации из YAML"""
+        # Создать директорию для логов
+        Path('logs').mkdir(parents=True, exist_ok=True)
+        
         with open(config_path, 'r', encoding='utf-8') as f:
             return yaml.safe_load(f)
-    
-    def _setup_logging(self):
-        """Настройка логирования"""
-        log_config = self.config.get('logging', {})
-        log_level = log_config.get('level', 'INFO')
-        log_file = log_config.get('file', './logs/wix_parser.log')
-        
-        # Создать директорию для логов
-        Path(log_file).parent.mkdir(parents=True, exist_ok=True)
-        
-        # Настроить loguru
-        logger.add(
-            log_file,
-            rotation="10 MB",
-            retention="1 week",
-            level=log_level,
-            encoding='utf-8'
-        )
         
     async def initialize_browser(self):
         """Инициализация браузера Playwright"""
@@ -117,36 +121,43 @@ class WixForumParser:
         """
         logger.info("Начало парсинга категорий...")
         
-        await self.page.goto(self.config['forum_url'])
-        await self.page.wait_for_load_state('networkidle')
-        
-        # TODO: Реализовать логику парсинга категорий
-        # Требуется анализ HTML структуры
-        
-        categories = []
-        
-        # Пример логики:
-        # category_elements = await self.page.query_selector_all(
-        #     self.config['selectors']['category_item']
-        # )
-        # 
-        # for idx, elem in enumerate(category_elements):
-        #     title = await elem.inner_text()
-        #     url = await elem.get_attribute('href')
-        #     
-        #     category = {
-        #         'id': idx + 1,
-        #         'title': title.strip(),
-        #         'url': url,
-        #         'subcategories': []
-        #     }
-        #     
-        #     categories.append(category)
-        
-        logger.info(f"Найдено категорий: {len(categories)}")
-        self.categories = categories
-        
-        return categories
+        try:
+            await self.page.goto(self.config['forum_url'])
+            await self.page.wait_for_load_state('networkidle')
+            
+            # TODO: Реализовать логику парсинга категорий
+            # Требуется анализ HTML структуры
+            
+            categories = []
+            
+            # Пример логики:
+            # category_elements = await self.page.query_selector_all(
+            #     self.config['selectors']['category_item']
+            # )
+            # 
+            # for idx, elem in enumerate(category_elements):
+            #     title = await elem.inner_text()
+            #     url = await elem.get_attribute('href')
+            #     
+            #     category = {
+            #         'id': idx + 1,
+            #         'title': title.strip(),
+            #         'url': url,
+            #         'subcategories': []
+            #     }
+            #     
+            #     categories.append(category)
+            #     self.stats['categories_parsed'] += 1
+            
+            logger.info(f"✓ Найдено категорий: {len(categories)}")
+            self.categories = categories
+            
+            return categories
+            
+        except Exception as e:
+            logger.error(f"✗ Ошибка при парсинге категорий: {e}")
+            self.stats['errors_count'] += 1
+            raise
     
     async def parse_subcategories(self, category: Dict) -> List[Dict]:
         """
@@ -160,11 +171,19 @@ class WixForumParser:
         """
         logger.info(f"Парсинг подкатегорий для: {category['title']}")
         
-        # TODO: Реализовать логику парсинга подкатегорий
-        
-        subcategories = []
-        
-        return subcategories
+        try:
+            # TODO: Реализовать логику парсинга подкатегорий
+            
+            subcategories = []
+            
+            self.stats['subcategories_parsed'] += len(subcategories)
+            
+            return subcategories
+            
+        except Exception as e:
+            logger.error(f"✗ Ошибка при парсинге подкатегорий {category['title']}: {e}")
+            self.stats['errors_count'] += 1
+            return []
     
     async def parse_posts(self, subcategory: Dict) -> List[Dict]:
         """
@@ -178,11 +197,19 @@ class WixForumParser:
         """
         logger.info(f"Парсинг постов в: {subcategory['title']}")
         
-        # TODO: Реализовать логику парсинга постов
-        
-        posts = []
-        
-        return posts
+        try:
+            # TODO: Реализовать логику парсинга постов
+            
+            posts = []
+            
+            self.stats['posts_parsed'] += len(posts)
+            
+            return posts
+            
+        except Exception as e:
+            logger.error(f"✗ Ошибка при парсинге постов в {subcategory['title']}: {e}")
+            self.stats['errors_count'] += 1
+            return []
     
     async def parse_post_details(self, post_url: str) -> Dict:
         """
@@ -247,8 +274,10 @@ class WixForumParser:
     async def run_full_parse(self):
         """Полный парсинг форума"""
         logger.info("=" * 80)
-        logger.info("НАЧАЛО ПОЛНОГО ПАРСИНГА ФОРУМА")
+        logger.info("🚀 НАЧАЛО ПОЛНОГО ПАРСИНГА ФОРУМА")
         logger.info("=" * 80)
+        
+        start_time = datetime.now()
         
         try:
             await self.initialize_browser()
@@ -258,35 +287,69 @@ class WixForumParser:
             categories = await self.parse_categories()
             
             # Парсинг каждой категории
-            for category in categories:
+            logger.info(f"\n📂 Обработка {len(categories)} категорий...")
+            
+            for category in tqdm(categories, desc="Категории", unit="cat"):
                 # Парсинг подкатегорий
                 subcategories = await self.parse_subcategories(category)
                 category['subcategories'] = subcategories
                 
                 # Парсинг постов в каждой подкатегории
-                for subcategory in subcategories:
-                    posts = await self.parse_posts(subcategory)
-                    subcategory['posts'] = posts
+                if subcategories:
+                    logger.info(f"\n  📁 Обработка подкатегорий в '{category['title']}'...")
                     
-                    # Задержка между запросами
-                    await asyncio.sleep(
-                        self.config['parsing']['delay_between_requests']
-                    )
+                    for subcategory in tqdm(subcategories, desc=f"  Подкатегории", leave=False):
+                        posts = await self.parse_posts(subcategory)
+                        subcategory['posts'] = posts
+                        
+                        # Обработка постов
+                        if posts:
+                            for post in tqdm(posts, desc=f"    Посты", leave=False):
+                                # Парсинг деталей поста (комментарии, вложения)
+                                # TODO: реализовать
+                                pass
+                        
+                        # Задержка между запросами
+                        await asyncio.sleep(
+                            self.config['parsing']['delay_between_requests']
+                        )
             
             # Сохранение результатов
             self.save_results()
             
+            # Подсчет времени выполнения
+            end_time = datetime.now()
+            duration = end_time - start_time
+            
+            # Вывод статистики
+            self._print_statistics(duration)
+            
             logger.info("=" * 80)
-            logger.info("ПАРСИНГ ЗАВЕРШЕН УСПЕШНО")
+            logger.info("✅ ПАРСИНГ ЗАВЕРШЕН УСПЕШНО")
             logger.info("=" * 80)
             
         except Exception as e:
-            logger.exception(f"Ошибка при парсинге: {e}")
+            logger.exception(f"❌ Критическая ошибка при парсинге: {e}")
+            self.stats['errors_count'] += 1
             raise
             
         finally:
             if self.browser:
                 await self.browser.close()
+    
+    def _print_statistics(self, duration):
+        """Вывод статистики выполнения"""
+        logger.info("\n" + "=" * 80)
+        logger.info("📊 СТАТИСТИКА ПАРСИНГА")
+        logger.info("=" * 80)
+        logger.info(f"✓ Обработано категорий:     {self.stats['categories_parsed']}")
+        logger.info(f"✓ Обработано подкатегорий:  {self.stats['subcategories_parsed']}")
+        logger.info(f"✓ Обработано постов:        {self.stats['posts_parsed']}")
+        logger.info(f"✓ Обработано комментариев:  {self.stats['comments_parsed']}")
+        logger.info(f"✓ Скачано файлов:           {self.stats['files_downloaded']}")
+        logger.info(f"⚠ Ошибок:                   {self.stats['errors_count']}")
+        logger.info(f"⏱ Время выполнения:         {duration}")
+        logger.info("=" * 80 + "\n")
     
     def save_results(self):
         """Сохранение результатов в JSON"""
@@ -302,7 +365,8 @@ class WixForumParser:
             'export_date': datetime.now().isoformat(),
             'forum_url': self.config['forum_url'],
             'categories': self.categories,
-            'stats': {
+            'statistics': self.stats,
+            'summary': {
                 'total_categories': len(self.categories),
                 'total_subcategories': sum(
                     len(cat.get('subcategories', [])) 
@@ -319,7 +383,7 @@ class WixForumParser:
         with open(structure_file, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         
-        logger.info(f"Результаты сохранены в: {structure_file}")
+        logger.info(f"\n💾 Результаты сохранены в: {structure_file}")
 
 
 async def main():

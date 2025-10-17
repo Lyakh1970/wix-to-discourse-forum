@@ -5,13 +5,15 @@
 
 import asyncio
 import hashlib
+import logging
 from pathlib import Path
 from typing import Dict, List, Optional
 from urllib.parse import urlparse
 
 import aiohttp
-from loguru import logger
 from tqdm import tqdm
+
+logger = logging.getLogger(__name__)
 
 
 class AttachmentDownloader:

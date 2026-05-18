@@ -1,0 +1,115 @@
+{
+  "source_inventory": "data/reports/wix_groups_inventory.json",
+  "rename_map": "config/vessel_rename_map.yaml",
+  "corrected_summary": {
+    "checked_slugs": 69,
+    "public_with_content": 30,
+    "public_empty": 0,
+    "private_or_login_required": 16,
+    "not_found_or_broken": 23,
+    "unknown": 0,
+    "important_for_manual_review": [],
+    "evidence_of_substantial_content_missing_locally": "NO_CLEAR_EVIDENCE_AFTER_KNOWN_RENAME_CONTEXT",
+    "notes": [
+      "This inventory is authenticated read-only if auth_state_used=true.",
+      "It does not compare Discourse and does not parse full post bodies.",
+      "Visible title samples are heuristic because Wix Groups are JavaScript-rendered.",
+      "Known vessel rename map applied after Phase 2 inventory.",
+      "Trondheim -> Fishing Tide and Forsa -> Fishing Force are treated as expected historical context, not gaps."
+    ],
+    "important_for_manual_review_original": [
+      {
+        "slug": "ft-issues",
+        "tested_url": "https://www.fisherydb.com/group/ft-issues/discussion",
+        "status": "PUBLIC_WITH_CONTENT",
+        "topic_sample_count": 3,
+        "notes": [
+          "Example: FT ISSUES",
+          "source=seed"
+        ]
+      }
+    ],
+    "covered_by_known_rename_context": [
+      {
+        "slug": "ft-issues",
+        "tested_url": "https://www.fisherydb.com/group/ft-issues/discussion",
+        "status": "PUBLIC_WITH_CONTENT",
+        "topic_sample_count": 3,
+        "notes": [
+          "Known vessel rename explains old/new slug mismatch.",
+          "Vessel was added to the old forum as Trondheim and later renamed to Fishing Tide in mid-2025."
+        ],
+        "resolution": "KNOWN_RENAME_MAPPING",
+        "old_name": "Trondheim",
+        "new_name": "Fishing Tide",
+        "canonical_archive_slug": "trondheim-issues",
+        "current_wix_slug": "ft-issues",
+        "canonical_archive_threads": 24,
+        "canonical_archive_posts": 59,
+        "current_wix_topic_sample": [
+          "FT Кабель ИГЭК левый борт 12.10.2025",
+          "12.10.2025 FT- AWX Ploter бросок координат",
+          "FT Кабель ИГЭК правый борт 11.10.2025"
+        ],
+        "canonical_wix_status": "NOT_FOUND_OR_BROKEN"
+      }
+    ]
+  },
+  "covered_suspected_gaps": [
+    {
+      "slug": "ft-issues",
+      "tested_url": "https://www.fisherydb.com/group/ft-issues/discussion",
+      "status": "PUBLIC_WITH_CONTENT",
+      "topic_sample_count": 3,
+      "notes": [
+        "Known vessel rename explains old/new slug mismatch.",
+        "Vessel was added to the old forum as Trondheim and later renamed to Fishing Tide in mid-2025."
+      ],
+      "resolution": "KNOWN_RENAME_MAPPING",
+      "old_name": "Trondheim",
+      "new_name": "Fishing Tide",
+      "canonical_archive_slug": "trondheim-issues",
+      "current_wix_slug": "ft-issues",
+      "canonical_archive_threads": 24,
+      "canonical_archive_posts": 59,
+      "current_wix_topic_sample": [
+        "FT Кабель ИГЭК левый борт 12.10.2025",
+        "12.10.2025 FT- AWX Ploter бросок координат",
+        "FT Кабель ИГЭК правый борт 11.10.2025"
+      ],
+      "canonical_wix_status": "NOT_FOUND_OR_BROKEN"
+    }
+  ],
+  "remaining_suspected_gaps": [],
+  "applied_context": [
+    {
+      "old_name": "Trondheim",
+      "new_name": "Fishing Tide",
+      "related_slugs": [
+        "trondheim-issues",
+        "ft-issues",
+        "ft-orders"
+      ],
+      "canonical_archive_slug": "trondheim-issues",
+      "current_wix_slug": "ft-issues",
+      "canonical_archive_counts": {
+        "threads": 24,
+        "posts": 59
+      }
+    },
+    {
+      "old_name": "Forsa",
+      "new_name": "Fishing Force",
+      "related_slugs": [
+        "ff-issues",
+        "ff-orders"
+      ],
+      "canonical_archive_slug": "ff-issues",
+      "current_wix_slug": "ff-issues",
+      "canonical_archive_counts": {
+        "threads": 25,
+        "posts": 38
+      }
+    }
+  ]
+}

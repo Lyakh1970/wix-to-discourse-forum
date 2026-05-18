@@ -1,0 +1,30 @@
+# Historical vessel/category rename context.
+# This is for audit interpretation only. It is not a Discourse import mapping.
+
+renames:
+  - old_name: Trondheim
+    new_name: Fishing Tide
+    old_abbrev: T
+    new_abbrev: FT
+    notes: >
+      Vessel was added to the old forum as Trondheim and later renamed
+      to Fishing Tide in mid-2025.
+    related_slugs:
+      - trondheim-issues
+      - ft-issues
+      - ft-orders
+    canonical_archive_slug: trondheim-issues
+    current_wix_slug: ft-issues
+
+  - old_name: Forsa
+    new_name: Fishing Force
+    old_abbrev: F
+    new_abbrev: FF
+    notes: >
+      Vessel was added to the old forum as Forsa and later renamed
+      to Fishing Force in mid-2025.
+    related_slugs:
+      - ff-issues
+      - ff-orders
+    canonical_archive_slug: ff-issues
+    current_wix_slug: ff-issues

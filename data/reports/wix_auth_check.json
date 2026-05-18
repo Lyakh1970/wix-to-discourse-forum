@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-05-18T14:43:56.275855+00:00",
+  "auth_mode": "authenticated",
+  "auth_user": "hostmarine.office@gmail.com",
+  "auth_state_path": "data\\private\\wix_auth_state.json",
+  "auth_state_used": true,
+  "seed_checks": [
+    {
+      "url": "https://www.fisherydb.com/group/catsat/discussion",
+      "final_url": "https://www.fisherydb.com/group/catsat/discussion",
+      "page_title": "Discussion - CATSAT | FISHERYDB",
+      "visibility_status": "PUBLIC",
+      "auth_user_expected": "hostmarine.office@gmail.com",
+      "auth_user_visible": false,
+      "has_session_cookie": true,
+      "visible_discussion_link_count": 1,
+      "notes": "Session cookie/page access detected; user email may not be visible in DOM."
+    },
+    {
+      "url": "https://www.fisherydb.com/group/ft-issues/discussion",
+      "final_url": "https://www.fisherydb.com/group/ft-issues/discussion",
+      "page_title": "Discussion - FT ISSUES | FISHERYDB",
+      "visibility_status": "PUBLIC",
+      "auth_user_expected": "hostmarine.office@gmail.com",
+      "auth_user_visible": false,
+      "has_session_cookie": true,
+      "visible_discussion_link_count": 2,
+      "notes": "Session cookie/page access detected; user email may not be visible in DOM."
+    },
+    {
+      "url": "https://www.fisherydb.com/group/marport/discussion",
+      "final_url": "https://www.fisherydb.com/group/marport/discussion",
+      "page_title": "Discussion - MARPORT | FISHERYDB",
+      "visibility_status": "PUBLIC",
+      "auth_user_expected": "hostmarine.office@gmail.com",
+      "auth_user_visible": false,
+      "has_session_cookie": true,
+      "visible_discussion_link_count": 2,
+      "notes": "Session cookie/page access detected; user email may not be visible in DOM."
+    }
+  ],
+  "login_required_groups": 0
+}

@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-05-18T15:05:53.369742+00:00",
+  "auth_mode": "authenticated",
+  "auth_user": "hostmarine.office@gmail.com",
+  "auth_state_used": true,
+  "snapshot_dir": "E:\\OneDrive\\Documents\\Codex\\FISHERYDB_FORUM_NG\\data\\wix_groups_snapshot",
+  "groups_requested": 1,
+  "groups_checked": 3,
+  "public_groups": 3,
+  "empty_groups": 0,
+  "login_required_groups": 0,
+  "broken_or_not_found_groups": 0,
+  "discussions": 6,
+  "comments": 18,
+  "attachments": 107,
+  "attachments_downloaded": 0,
+  "attachments_remote_only": 107,
+  "limitations": [
+    "Selectors are generic Wix Groups verification selectors and may require tuning after test run.",
+    "Media downloading is disabled by default; URLs are recorded as REMOTE_ONLY unless enabled later.",
+    "Current snapshot is read-only and authenticated; no comments, likes, edits, or Discourse actions are performed."
+  ]
+}

@@ -1,0 +1,1152 @@
+{
+  "root": "E:\\OneDrive\\Documents\\Claude\\projects\\fisherydb-forum-parser",
+  "audit_scope": {
+    "uses_discourse_api": false,
+    "checks_discourse_category_mapping_as_error": false,
+    "primary_source": "output/forum_data.db",
+    "secondary_source": "output/*/threads.json"
+  },
+  "warnings": [],
+  "self_containment": {
+    "sqlite_categories": 67,
+    "sqlite_categories_with_threads": 60,
+    "thread_json_categories": 60,
+    "sqlite_threads": 589,
+    "sqlite_posts": 1236,
+    "sqlite_original_posts": 589,
+    "sqlite_comments": 647,
+    "sqlite_attachments": 1151,
+    "sqlite_images": 1055,
+    "referenced_local_files_present": 1135,
+    "physical_local_attachment_or_image_files": 1135,
+    "physical_local_files_by_extension": {
+      ".13mb": 1,
+      ".bin": 1,
+      ".doc": 1,
+      ".docx": 6,
+      ".jpg": 921,
+      ".pdf": 53,
+      ".png": 119,
+      ".txt": 5,
+      ".xlsx": 15,
+      ".zip": 13
+    }
+  },
+  "quality": {
+    "threads_missing_title": 0,
+    "threads_missing_author": 0,
+    "threads_missing_date": 0,
+    "threads_missing_category": 0,
+    "posts_missing_body": 0,
+    "posts_missing_author": 0,
+    "posts_missing_date": 0,
+    "suspicious_short_body_count": 12,
+    "suspicious_short_body_sample": [
+      {
+        "post_id": "658bfc84fd348c0011076cd2",
+        "thread_id": "astican-permit-request-link",
+        "category_slug": "staff-only",
+        "is_comment": false,
+        "body_length": 13,
+        "body_preview": "QUESTIONNAIRE"
+      },
+      {
+        "post_id": "C-c1dfffdb-1b98-4bde-ad33-a476e8df5ea3",
+        "thread_id": "catsat-podgotovka-k-ustanovke",
+        "category_slug": "catsat",
+        "is_comment": true,
+        "body_length": 12,
+        "body_preview": "FT ПК MaxSea"
+      },
+      {
+        "post_id": "C-d0778be1-5d50-4efe-8046-82d528f609f6",
+        "thread_id": "catsat-podgotovka-k-ustanovke",
+        "category_slug": "catsat",
+        "is_comment": true,
+        "body_length": 8,
+        "body_preview": "FV PC IE"
+      },
+      {
+        "post_id": "C-56d877a7-cbf8-4f7b-86fc-a9c9c2329aa7",
+        "thread_id": "fk-re-03-2024",
+        "category_slug": "fk-orders",
+        "is_comment": true,
+        "body_length": 19,
+        "body_preview": "В стадии обсуждения"
+      },
+      {
+        "post_id": "C-cfc46f0b-2ceb-40a6-99ce-510fab7abdbc",
+        "thread_id": "ggs-ryabina-opisanie-blokov",
+        "category_slug": "rjabina",
+        "is_comment": true,
+        "body_length": 7,
+        "body_preview": "атавизм"
+      },
+      {
+        "post_id": "68edf21a29364ee32f91aa20",
+        "thread_id": "intermec-px4i-spare-parts-catalog",
+        "category_slug": "honeywell-px4",
+        "is_comment": false,
+        "body_length": 16,
+        "body_preview": "NY_PX_spares.pdf"
+      },
+      {
+        "post_id": "C-9c4fd4af-70bf-4cd8-bedd-ebe1c4df6225",
+        "thread_id": "marport-ds-15-00-s-n-4194776-8f9a",
+        "category_slug": "marport-1",
+        "is_comment": true,
+        "body_length": 14,
+        "body_preview": "KM CALIBRATION"
+      },
+      {
+        "post_id": "C-fb684239-7fcc-466a-8254-863680937a19",
+        "thread_id": "marport-ds-ss-16-00-s-n-4194777-d3f2",
+        "category_slug": "marport-1",
+        "is_comment": true,
+        "body_length": 19,
+        "body_preview": "KM CALIBRATION DATA"
+      },
+      {
+        "post_id": "C-31a20ffb-c124-458e-8bf4-121fede0bd1c",
+        "thread_id": "marport-ds-ss-16-00-s-n-na-4aec",
+        "category_slug": "marport-1",
+        "is_comment": true,
+        "body_length": 14,
+        "body_preview": "KM CALIBRATION"
+      },
+      {
+        "post_id": "C-377ee8e6-2011-47a2-8d9e-a269a9198fe0",
+        "thread_id": "new-vessels-e-mail-how-to-jan-2024",
+        "category_slug": "obshchie-voprosy",
+        "is_comment": true,
+        "body_length": 10,
+        "body_preview": "Выполнено."
+      },
+      {
+        "post_id": "C-260ce608-f586-4d12-b45a-0ecdd18dc849",
+        "thread_id": "perenos-kamery-flir-na-nosovoy-portal-na-pedestal-antenny-vsat",
+        "category_slug": "_flir",
+        "is_comment": true,
+        "body_length": 15,
+        "body_preview": "Ну и два фото 🤓"
+      },
+      {
+        "post_id": "C-9a168881-cc09-4753-ae9c-b1e83b626b51",
+        "thread_id": "sumrad-es80-38khz-vibrator-replacement",
+        "category_slug": "___ks",
+        "is_comment": true,
+        "body_length": 17,
+        "body_preview": "Понятно, спасибо."
+      }
+    ],
+    "error_marker_post_count": 0,
+    "error_marker_post_sample": [],
+    "attachments_missing_local_path": 15,
+    "attachments_broken_local_path": 0,
+    "attachments_missing_local_path_sample": [
+      {
+        "id": "571566b3d5ed46ac",
+        "post_id": "63904b7ac846590012bf05f4",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/spectrum-icons/generated/content/content-exe-large.png",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/spectrum-icons/generated/content/content-exe-large.png",
+        "file_type": "png",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "e6d365fdbcab0d3a",
+        "post_id": "63904bf7c846590012bf0602",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/temp_thumb_from_token/s/t7kj22yo9ji2vy6?preserve_transparency=False&size=1200x1200&size_mode=4&unfurl=1",
+        "filename": "https://www.dropbox.com/temp_thumb_from_token/s/t7kj22yo9ji2vy6?preserve_transparency=False&size=1200x1200&size_mode=4&unfurl=1",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "cd296a485858dda4",
+        "post_id": "64f97423096b680010e0603c",
+        "url": "https://static.wixstatic.com/media/https://lh3.googleusercontent.com/docs/AOD9vFrqw8ZYKD-MOTKhtsiiOdhRhrF9fwQYsDblmWxb8dLINTDIMwXq3Iusvz15TSWy_5RXVlic7JQuwWufRb68DABMoR7Xk5ZiNAoyl7SAvmE=w1200-h630-p",
+        "filename": "https://lh3.googleusercontent.com/docs/AOD9vFrqw8ZYKD-MOTKhtsiiOdhRhrF9fwQYsDblmWxb8dLINTDIMwXq3Iusvz15TSWy_5RXVlic7JQuwWufRb68DABMoR7Xk5ZiNAoyl7SAvmE=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "61c093d813a4ffba",
+        "post_id": "652ea3e808b50900101a892a",
+        "url": "https://static.wixstatic.com/media//web/wp-content/uploads/2023/09/CW-cockpit-edit2-1024x576.jpeg",
+        "filename": "/web/wp-content/uploads/2023/09/CW-cockpit-edit2-1024x576.jpeg",
+        "file_type": "jpeg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "39daa829e631a508",
+        "post_id": "657b142feb80b000103846a5",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png",
+        "file_type": "png",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "018468129b46f6af",
+        "post_id": "65856269edbdce00103f8be2",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+        "file_type": "png",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "6cd0f289f33e79ae",
+        "post_id": "65d1d91375cace00107afe1f",
+        "url": "https://static.wixstatic.com/media/https://sklep.inveo.com.pl/464-large_default/hero-web-sensor.jpg",
+        "filename": "https://sklep.inveo.com.pl/464-large_default/hero-web-sensor.jpg",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "f1415970ea7ca3e0",
+        "post_id": "65d1d91375cace00107afe1f",
+        "url": "https://static.wixstatic.com/media/https://sklep.inveo.com.pl/465-large_default/nano-temp.jpg",
+        "filename": "https://sklep.inveo.com.pl/465-large_default/nano-temp.jpg",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "9ff3d739b97599eb",
+        "post_id": "66012bee955a430010bb86ca",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-unknown-landscape.png",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-unknown-landscape.png",
+        "file_type": "png",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "03216d6541c3cb79",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyJIAYbAsQMRp3uChL33eDSKsnfgAk5enp67GljQ70zUxuIV7-SEtkec7bJ-xqiyY9rxFa0uPxR9eWnu9ZwAaTeU36Ryi5p4COGD8pTgOkB1T_t4Ws4=w1200-h630-p",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyJIAYbAsQMRp3uChL33eDSKsnfgAk5enp67GljQ70zUxuIV7-SEtkec7bJ-xqiyY9rxFa0uPxR9eWnu9ZwAaTeU36Ryi5p4COGD8pTgOkB1T_t4Ws4=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "85083459de327a6f",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyJTV47bX4zBZf-I8_00qr8Ocy70TwjoqSVals_rWoRm8It1mL4DY3CeFAkryYLEt1JOrr17bmze6dCAe-xnkAdUNEWy2tEvNoV4lc_muFsrUIlYhTRV=w1200-h630-p",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyJTV47bX4zBZf-I8_00qr8Ocy70TwjoqSVals_rWoRm8It1mL4DY3CeFAkryYLEt1JOrr17bmze6dCAe-xnkAdUNEWy2tEvNoV4lc_muFsrUIlYhTRV=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "9de9707b72cdde83",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyK2Vp-Zzi2-UsSYHk82P_raw2AKZG2J91QLOmEBlCKfBlWJycVRK3Ax_wi-0w2waSxFgIUBHo9b_bWArysI6YRYJy4nHFwSYSVjCaUUAlq4m5II71SH=w1200-h630-p",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyK2Vp-Zzi2-UsSYHk82P_raw2AKZG2J91QLOmEBlCKfBlWJycVRK3Ax_wi-0w2waSxFgIUBHo9b_bWArysI6YRYJy4nHFwSYSVjCaUUAlq4m5II71SH=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "2e7ad6689588d54e",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyL_YvNspuyyTXQ6e5Jnepj586hKfmZkb8atgbTGUAAlkARJEHb2KhBh1w5oGW8oMtmztLSO7QQ4wGuZ9xQ2qKf5D5PmhbJcrcKsxDHbnTySR2V4ekKM=w1200-h630-p",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyL_YvNspuyyTXQ6e5Jnepj586hKfmZkb8atgbTGUAAlkARJEHb2KhBh1w5oGW8oMtmztLSO7QQ4wGuZ9xQ2qKf5D5PmhbJcrcKsxDHbnTySR2V4ekKM=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "dcb843ba367d8a41",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyLtmHKqLZKkkYydUEqTxwOzG5ggJIjfX0suzFR58qjA1zhnFBJFo_h5-LnSMO258WZ_lGu5WQyVLFf-bilumx1yGKDAFV7VfX9Up54W7DWyG9xurFbF=w1200-h630-p",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyLtmHKqLZKkkYydUEqTxwOzG5ggJIjfX0suzFR58qjA1zhnFBJFo_h5-LnSMO258WZ_lGu5WQyVLFf-bilumx1yGKDAFV7VfX9Up54W7DWyG9xurFbF=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "5ed06830996c27d3",
+        "post_id": "6791f9b4b10608647a89287f",
+        "url": "https://static.wixstatic.com/media/https://radiochief.ru/wp-content/uploads/2014/12/sr_srg.jpg",
+        "filename": "https://radiochief.ru/wp-content/uploads/2014/12/sr_srg.jpg",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      }
+    ],
+    "attachments_broken_local_path_sample": [],
+    "blocking_issues": [],
+    "review_issues": [
+      "Some attachment records have no local_path and may be remote-only embeds/previews.",
+      "Some posts/comments have suspiciously short bodies."
+    ]
+  },
+  "sqlite_json_consistency": {
+    "sqlite_threads": 589,
+    "json_threads": 589,
+    "sqlite_posts": 1236,
+    "json_posts": 1236,
+    "sqlite_comments": 647,
+    "json_comments": 647,
+    "sqlite_attachment_references": 1151,
+    "json_attachment_references": 1158,
+    "thread_delta_json_minus_sqlite": 0,
+    "post_delta_json_minus_sqlite": 0,
+    "comment_delta_json_minus_sqlite": 0,
+    "attachment_delta_json_minus_sqlite": 7,
+    "sqlite_categories_without_threads_json": [
+      "3d-design",
+      "_nmea",
+      "equipment",
+      "fleet-orders",
+      "issues-log-log-polomok",
+      "km-orders",
+      "mrto-2022-2023-2024"
+    ],
+    "sqlite_categories_with_threads_without_threads_json": [],
+    "thread_json_categories_missing_from_sqlite": []
+  },
+  "category_coverage": [
+    {
+      "slug": "3d-design",
+      "name": "3D DESIGN",
+      "threads": 0,
+      "posts": 0,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": false,
+      "status": "DB_ONLY_EMPTY",
+      "status_reasons": [
+        "SQLite category is empty and has no threads.json"
+      ]
+    },
+    {
+      "slug": "___fs",
+      "name": "FS",
+      "threads": 9,
+      "posts": 12,
+      "comments": 3,
+      "attachments": 3,
+      "images": 3,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "___km",
+      "name": "KM",
+      "threads": 5,
+      "posts": 7,
+      "comments": 2,
+      "attachments": 12,
+      "images": 10,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "___ks",
+      "name": "KS",
+      "threads": 8,
+      "posts": 12,
+      "comments": 4,
+      "attachments": 28,
+      "images": 28,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "___mk",
+      "name": "MK",
+      "threads": 12,
+      "posts": 18,
+      "comments": 6,
+      "attachments": 31,
+      "images": 27,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "__ais",
+      "name": "AIS",
+      "threads": 3,
+      "posts": 7,
+      "comments": 4,
+      "attachments": 2,
+      "images": 1,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "__q-a",
+      "name": "Q&A",
+      "threads": 11,
+      "posts": 15,
+      "comments": 4,
+      "attachments": 18,
+      "images": 14,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "_cctv",
+      "name": "CCTV",
+      "threads": 1,
+      "posts": 1,
+      "comments": 0,
+      "attachments": 1,
+      "images": 1,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "_flir",
+      "name": "Flir",
+      "threads": 5,
+      "posts": 21,
+      "comments": 16,
+      "attachments": 14,
+      "images": 13,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "_gyro",
+      "name": "GYRO",
+      "threads": 1,
+      "posts": 1,
+      "comments": 0,
+      "attachments": 2,
+      "images": 2,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "_nmea",
+      "name": "NMEA",
+      "threads": 0,
+      "posts": 0,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": false,
+      "status": "DB_ONLY_EMPTY",
+      "status_reasons": [
+        "SQLite category is empty and has no threads.json"
+      ]
+    },
+    {
+      "slug": "_nmea-1",
+      "name": "NMEA (2)",
+      "threads": 3,
+      "posts": 3,
+      "comments": 0,
+      "attachments": 5,
+      "images": 2,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "_olex",
+      "name": "Olex",
+      "threads": 4,
+      "posts": 7,
+      "comments": 3,
+      "attachments": 9,
+      "images": 9,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "belize-orbcomm",
+      "name": "BELIZE ORBCOMM",
+      "threads": 2,
+      "posts": 3,
+      "comments": 1,
+      "attachments": 12,
+      "images": 11,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "brands",
+      "name": "Brands",
+      "threads": 1,
+      "posts": 1,
+      "comments": 0,
+      "attachments": 1,
+      "images": 1,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "catches",
+      "name": "Catches",
+      "threads": 1,
+      "posts": 1,
+      "comments": 0,
+      "attachments": 1,
+      "images": 1,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "catsat",
+      "name": "CATSAT",
+      "threads": 3,
+      "posts": 7,
+      "comments": 4,
+      "attachments": 8,
+      "images": 8,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "equipment",
+      "name": "Equipment",
+      "threads": 0,
+      "posts": 0,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": false,
+      "status": "DB_ONLY_EMPTY",
+      "status_reasons": [
+        "SQLite category is empty and has no threads.json"
+      ]
+    },
+    {
+      "slug": "ff-issues",
+      "name": "FF ISSUES",
+      "threads": 25,
+      "posts": 38,
+      "comments": 13,
+      "attachments": 38,
+      "images": 38,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "ff-orders",
+      "name": "FF orders",
+      "threads": 5,
+      "posts": 5,
+      "comments": 0,
+      "attachments": 5,
+      "images": 5,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "fk-catches",
+      "name": "FK catches",
+      "threads": 2,
+      "posts": 2,
+      "comments": 0,
+      "attachments": 1,
+      "images": 1,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "fk-orders",
+      "name": "FK orders",
+      "threads": 20,
+      "posts": 31,
+      "comments": 11,
+      "attachments": 37,
+      "images": 34,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "fleet-express",
+      "name": "Fleet express",
+      "threads": 3,
+      "posts": 4,
+      "comments": 1,
+      "attachments": 4,
+      "images": 2,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "fleet-orders",
+      "name": "Fleet Orders",
+      "threads": 0,
+      "posts": 0,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": false,
+      "status": "DB_ONLY_EMPTY",
+      "status_reasons": [
+        "SQLite category is empty and has no threads.json"
+      ]
+    },
+    {
+      "slug": "fs-catches",
+      "name": "FS catches",
+      "threads": 1,
+      "posts": 1,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "fs-issues",
+      "name": "FS ISSUES",
+      "threads": 30,
+      "posts": 112,
+      "comments": 82,
+      "attachments": 31,
+      "images": 31,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "fs-orders",
+      "name": "FS orders",
+      "threads": 8,
+      "posts": 11,
+      "comments": 3,
+      "attachments": 10,
+      "images": 10,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "fsea-cathes",
+      "name": "FSea catches",
+      "threads": 1,
+      "posts": 1,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "fsea-orders",
+      "name": "FSea orders",
+      "threads": 23,
+      "posts": 37,
+      "comments": 14,
+      "attachments": 33,
+      "images": 28,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "ft-orders",
+      "name": "FT orders",
+      "threads": 10,
+      "posts": 22,
+      "comments": 12,
+      "attachments": 22,
+      "images": 22,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "furuno",
+      "name": "Furuno",
+      "threads": 17,
+      "posts": 24,
+      "comments": 7,
+      "attachments": 32,
+      "images": 29,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "fv-catches",
+      "name": "FV catches",
+      "threads": 1,
+      "posts": 1,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "fv-orders",
+      "name": "FV orders",
+      "threads": 13,
+      "posts": 13,
+      "comments": 0,
+      "attachments": 15,
+      "images": 13,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "honeywell-px4",
+      "name": "Honeywell PX4",
+      "threads": 16,
+      "posts": 21,
+      "comments": 5,
+      "attachments": 48,
+      "images": 36,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "inmarsat-c",
+      "name": "INMARSAT-C",
+      "threads": 2,
+      "posts": 2,
+      "comments": 0,
+      "attachments": 1,
+      "images": 1,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "issues-log-log-polomok",
+      "name": "Issues Log /// Лог поломок",
+      "threads": 0,
+      "posts": 0,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": false,
+      "status": "DB_ONLY_EMPTY",
+      "status_reasons": [
+        "SQLite category is empty and has no threads.json"
+      ]
+    },
+    {
+      "slug": "jotron",
+      "name": "Jotron",
+      "threads": 1,
+      "posts": 1,
+      "comments": 0,
+      "attachments": 3,
+      "images": 1,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "km-catches",
+      "name": "KM catches",
+      "threads": 1,
+      "posts": 1,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "km-issues",
+      "name": "KM ISSUES",
+      "threads": 30,
+      "posts": 108,
+      "comments": 78,
+      "attachments": 55,
+      "images": 55,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "km-orders",
+      "name": "KM orders",
+      "threads": 0,
+      "posts": 0,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": false,
+      "status": "DB_ONLY_EMPTY",
+      "status_reasons": [
+        "SQLite category is empty and has no threads.json"
+      ]
+    },
+    {
+      "slug": "ks-issues",
+      "name": "KS ISSUES",
+      "threads": 30,
+      "posts": 174,
+      "comments": 144,
+      "attachments": 62,
+      "images": 61,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "lan-staff",
+      "name": "LAN STAFF",
+      "threads": 12,
+      "posts": 14,
+      "comments": 2,
+      "attachments": 24,
+      "images": 22,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "marport",
+      "name": "Marport",
+      "threads": 12,
+      "posts": 19,
+      "comments": 7,
+      "attachments": 18,
+      "images": 13,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "marport-1",
+      "name": "MARPORT",
+      "threads": 30,
+      "posts": 93,
+      "comments": 63,
+      "attachments": 8,
+      "images": 8,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "maxar-insightexplorer",
+      "name": "MAXAR",
+      "threads": 6,
+      "posts": 8,
+      "comments": 2,
+      "attachments": 10,
+      "images": 7,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "mk-issues",
+      "name": "MK ISSUES",
+      "threads": 30,
+      "posts": 52,
+      "comments": 22,
+      "attachments": 130,
+      "images": 130,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "mn-issue",
+      "name": "MN ISSUES",
+      "threads": 10,
+      "posts": 12,
+      "comments": 2,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "monitoring",
+      "name": "Monitoring",
+      "threads": 1,
+      "posts": 1,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "mrto-2022-2023-2024",
+      "name": "MRTO 2022-2023-2024",
+      "threads": 0,
+      "posts": 0,
+      "comments": 0,
+      "attachments": 0,
+      "images": 0,
+      "has_threads_json": false,
+      "status": "DB_ONLY_EMPTY",
+      "status_reasons": [
+        "SQLite category is empty and has no threads.json"
+      ]
+    },
+    {
+      "slug": "mrto-obshchie-voprosy",
+      "name": "MRTO Общие вопросы",
+      "threads": 5,
+      "posts": 7,
+      "comments": 2,
+      "attachments": 10,
+      "images": 9,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "mv-issues",
+      "name": "MV ISSUES",
+      "threads": 30,
+      "posts": 71,
+      "comments": 41,
+      "attachments": 45,
+      "images": 43,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "network",
+      "name": "NETWORK",
+      "threads": 12,
+      "posts": 17,
+      "comments": 5,
+      "attachments": 37,
+      "images": 37,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "obshchie-voprosy",
+      "name": "Общие вопросы",
+      "threads": 11,
+      "posts": 21,
+      "comments": 10,
+      "attachments": 23,
+      "images": 22,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "other-equipment",
+      "name": "OTHER EQUIPMENT",
+      "threads": 30,
+      "posts": 46,
+      "comments": 16,
+      "attachments": 79,
+      "images": 70,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "other-equipment-on-board",
+      "name": "Other equipment on board",
+      "threads": 3,
+      "posts": 3,
+      "comments": 0,
+      "attachments": 8,
+      "images": 8,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "raritan",
+      "name": "Raritan",
+      "threads": 2,
+      "posts": 2,
+      "comments": 0,
+      "attachments": 2,
+      "images": 2,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "rjabina",
+      "name": "RJABINA",
+      "threads": 9,
+      "posts": 12,
+      "comments": 3,
+      "attachments": 7,
+      "images": 2,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "simrad",
+      "name": "Simrad",
+      "threads": 10,
+      "posts": 15,
+      "comments": 5,
+      "attachments": 28,
+      "images": 24,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "simrad-1",
+      "name": "SIMRAD",
+      "threads": 6,
+      "posts": 7,
+      "comments": 1,
+      "attachments": 4,
+      "images": 0,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "staff-only",
+      "name": "Staff Only",
+      "threads": 7,
+      "posts": 7,
+      "comments": 0,
+      "attachments": 1,
+      "images": 0,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "starlink",
+      "name": "STARLINK",
+      "threads": 12,
+      "posts": 18,
+      "comments": 6,
+      "attachments": 57,
+      "images": 52,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "starlink-iridium-bandle",
+      "name": "STARLINK-IRIDIUM BANDLE",
+      "threads": 3,
+      "posts": 3,
+      "comments": 0,
+      "attachments": 1,
+      "images": 1,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "transas",
+      "name": "TRANSAS",
+      "threads": 2,
+      "posts": 4,
+      "comments": 2,
+      "attachments": 5,
+      "images": 5,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "trawltec",
+      "name": "TRAWLTEC",
+      "threads": 3,
+      "posts": 6,
+      "comments": 3,
+      "attachments": 19,
+      "images": 14,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "triton",
+      "name": "TRITON",
+      "threads": 7,
+      "posts": 8,
+      "comments": 1,
+      "attachments": 13,
+      "images": 11,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "trondheim-issues",
+      "name": "FT ISSUES",
+      "threads": 24,
+      "posts": 59,
+      "comments": 35,
+      "attachments": 71,
+      "images": 70,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    },
+    {
+      "slug": "video-cctv",
+      "name": "VIDEO CCTV",
+      "threads": 4,
+      "posts": 6,
+      "comments": 2,
+      "attachments": 7,
+      "images": 7,
+      "has_threads_json": true,
+      "status": "OK",
+      "status_reasons": []
+    }
+  ],
+  "practical_conclusion": {
+    "can_use_local_archive_as_working_source": true,
+    "blocking_import_issues": [],
+    "non_blocking_review_issues": [
+      "Some attachment records have no local_path and may be remote-only embeds/previews.",
+      "Some posts/comments have suspiciously short bodies.",
+      "SQLite and JSON attachment reference counts differ.",
+      "Some SQLite-only categories are empty and can be treated as structural remnants."
+    ],
+    "can_proceed_to_read_only_wix_groups_check": true,
+    "wix_groups_should_check": [
+      "Categories or topics involved in attachment count mismatches.",
+      "Posts with missing local_path attachments that may be remote-only embeds.",
+      "Representative high-volume categories to validate archive completeness against visible Wix Groups."
+    ],
+    "summary": "The local archive is a usable working source for recovery/re-import planning."
+  }
+}

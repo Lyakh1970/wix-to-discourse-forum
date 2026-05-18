@@ -1,0 +1,1456 @@
+{
+  "started_at": "2026-05-18T13:05:14",
+  "root": "E:\\OneDrive\\Documents\\Claude\\projects\\fisherydb-forum-parser",
+  "auth_state_used": true,
+  "auth_state_path": "data\\working\\wix_auth_state.json",
+  "scope": {
+    "read_only": true,
+    "discourse_touched": false,
+    "downloads_enabled": false,
+    "mass_post_parsing": false,
+    "deep_scrolling": false
+  },
+  "warnings": [],
+  "summary": {
+    "checked_slugs": 69,
+    "public_with_content": 30,
+    "public_empty": 0,
+    "private_or_login_required": 16,
+    "not_found_or_broken": 23,
+    "unknown": 0,
+    "important_for_manual_review": [
+      {
+        "slug": "ft-issues",
+        "tested_url": "https://www.fisherydb.com/group/ft-issues/discussion",
+        "status": "PUBLIC_WITH_CONTENT",
+        "topic_sample_count": 3,
+        "notes": [
+          "Example: FT ISSUES",
+          "source=seed"
+        ]
+      }
+    ],
+    "evidence_of_substantial_content_missing_locally": "UNKNOWN_PENDING_MANUAL_REVIEW",
+    "notes": [
+      "This inventory is authenticated read-only if auth_state_used=true.",
+      "It does not compare Discourse and does not parse full post bodies.",
+      "Visible title samples are heuristic because Wix Groups are JavaScript-rendered."
+    ]
+  },
+  "groups": [
+    {
+      "slug": "3d-design",
+      "tested_url": "https://www.fisherydb.com/group/3d-design/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/3d-design/discussion",
+      "page_title": "Discussion - 3D design | FISHERYDB",
+      "detected_group_title": "3D design",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 0,
+      "local_post_count": 0,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "___fs",
+      "tested_url": "https://www.fisherydb.com/group/___fs/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/___fs/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 9,
+      "local_post_count": 12,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "___km",
+      "tested_url": "https://www.fisherydb.com/group/___km/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/___km/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 5,
+      "local_post_count": 7,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "___ks",
+      "tested_url": "https://www.fisherydb.com/group/___ks/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/___ks/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 8,
+      "local_post_count": 12,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "___mk",
+      "tested_url": "https://www.fisherydb.com/group/___mk/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/___mk/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 12,
+      "local_post_count": 18,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "__ais",
+      "tested_url": "https://www.fisherydb.com/group/__ais/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/__ais/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 3,
+      "local_post_count": 7,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "__q-a",
+      "tested_url": "https://www.fisherydb.com/group/__q-a/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/__q-a/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 11,
+      "local_post_count": 15,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "_cctv",
+      "tested_url": "https://www.fisherydb.com/group/_cctv/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/_cctv/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 1,
+      "local_post_count": 1,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "_flir",
+      "tested_url": "https://www.fisherydb.com/group/_flir/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/_flir/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 5,
+      "local_post_count": 21,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "_gyro",
+      "tested_url": "https://www.fisherydb.com/group/_gyro/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/_gyro/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 1,
+      "local_post_count": 1,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "_nmea",
+      "tested_url": "https://www.fisherydb.com/group/_nmea/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/_nmea/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 0,
+      "local_post_count": 0,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "_nmea-1",
+      "tested_url": "https://www.fisherydb.com/group/_nmea-1/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/_nmea-1/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 3,
+      "local_post_count": 3,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "_olex",
+      "tested_url": "https://www.fisherydb.com/group/_olex/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/_olex/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 4,
+      "local_post_count": 7,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "belize-orbcomm",
+      "tested_url": "https://www.fisherydb.com/group/belize-orbcomm/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/belize-orbcomm/discussion",
+      "page_title": "Discussion - BELIZE ORBCOMM | FISHERYDB",
+      "detected_group_title": "BELIZE ORBCOMM",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Marshal Vasilevskij",
+        "FF POLE STAR ситема мониторинга BELIZE установка на борту 20.03.2025",
+        "FV Установка POLE STAR (мониторинг BELIZE) 05.12.2024"
+      ],
+      "visible_dates_sample": [
+        "March 20, 2025",
+        "20.03.2025",
+        "December 6, 2024",
+        "05.12.2024",
+        "Dec 09, 2024"
+      ],
+      "local_thread_count": 2,
+      "local_post_count": 3,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "brands",
+      "tested_url": "https://www.fisherydb.com/group/brands/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/brands/discussion",
+      "page_title": "Discussion - BRANDS | FISHERYDB",
+      "detected_group_title": "BRANDS",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "PASSES ПАРОЛИ FURUNO JOTRON JRC"
+      ],
+      "visible_dates_sample": [
+        "January 21, 2023"
+      ],
+      "local_thread_count": 1,
+      "local_post_count": 1,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "catches",
+      "tested_url": "https://www.fisherydb.com/group/catches/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/catches/discussion",
+      "page_title": "Discussion - CATCHES | FISHERYDB",
+      "detected_group_title": "CATCHES",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Q & A - что это и для чего"
+      ],
+      "visible_dates_sample": [
+        "February 1, 2024"
+      ],
+      "local_thread_count": 1,
+      "local_post_count": 1,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "catsat",
+      "tested_url": "https://www.fisherydb.com/group/catsat/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/catsat/discussion",
+      "page_title": "Discussion - CATSAT | FISHERYDB",
+      "detected_group_title": "CATSAT",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Alex Kuh",
+        "FT Вопрос по рекомендованным требованиям к SSD для CatSat"
+      ],
+      "visible_dates_sample": [
+        "July 11, 2025"
+      ],
+      "local_thread_count": 3,
+      "local_post_count": 7,
+      "notes": [
+        "Example: CATSAT-related group",
+        "source=sqlite+seed"
+      ]
+    },
+    {
+      "slug": "chE4ZQ",
+      "tested_url": "https://www.fisherydb.com/group/chE4ZQ/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/chE4ZQ/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 0,
+      "local_post_count": 0,
+      "notes": [
+        "May be private/empty/broken; verify",
+        "source=seed"
+      ]
+    },
+    {
+      "slug": "equipment",
+      "tested_url": "https://www.fisherydb.com/group/equipment/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/equipment/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 0,
+      "local_post_count": 0,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "ff-issues",
+      "tested_url": "https://www.fisherydb.com/group/ff-issues/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/ff-issues/discussion",
+      "page_title": "Discussion - FF ISSUES | FISHERYDB",
+      "detected_group_title": "FF ISSUES",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Danila Krivitskii",
+        "FF Кабель ИГЭК П/Б износ палубной части. Переделка соединения Pigtail FS70"
+      ],
+      "visible_dates_sample": [
+        "October 15, 2025",
+        "15.10.2025",
+        "27.03.2025"
+      ],
+      "local_thread_count": 25,
+      "local_post_count": 38,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "ff-orders",
+      "tested_url": "https://www.fisherydb.com/group/ff-orders/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/ff-orders/discussion",
+      "page_title": "Discussion - FF orders | FISHERYDB",
+      "detected_group_title": "FF orders",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "FF Zayavka PKRE 03-2025 v sleduiushiy reis 04082025.xls",
+        "FF Zayavka PKRE 02-2025 от 28072025.xls",
+        "FF Zayavka PKRE 01-2025 от 27072025.xls",
+        "FF Заявка ПКРЭ 1-2025 следующий рейс ИГЭК СМАЗКА.xls",
+        "Forsa ПКРЭ Zayavka 01-2024 от 25112024.xls",
+        "FF RE-03-2025",
+        "FF RE-02-2025",
+        "FF RE-01-2025",
+        "FF RE-01 2025 IGEK",
+        "FF RE 01 2024"
+      ],
+      "visible_dates_sample": [
+        "September 27, 2025",
+        "March 29, 2025"
+      ],
+      "local_thread_count": 5,
+      "local_post_count": 5,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "fk-catches",
+      "tested_url": "https://www.fisherydb.com/group/fk-catches/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/fk-catches/discussion",
+      "page_title": "Discussion - FK catches | FISHERYDB",
+      "detected_group_title": "FK catches",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 2,
+      "local_post_count": 2,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "fk-orders",
+      "tested_url": "https://www.fisherydb.com/group/fk-orders/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/fk-orders/discussion",
+      "page_title": "Discussion - FK orders | FISHERYDB",
+      "detected_group_title": "FK orders",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 20,
+      "local_post_count": 31,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "fleet-express",
+      "tested_url": "https://www.fisherydb.com/group/fleet-express/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/fleet-express/discussion",
+      "page_title": "Discussion - Fleet eXpress | FISHERYDB",
+      "detected_group_title": "Fleet eXpress",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Aleksandr Kh.",
+        "FX VSAT FBB ANTENNA PEDESTAL DRAWINGS",
+        "INFINITY FIREWALL new restrictions - ограничения на доступ к ресурсам",
+        "Beam 80 black listed"
+      ],
+      "visible_dates_sample": [
+        "January 7, 2025",
+        "April 12, 2024",
+        "Apr 12, 2024",
+        "12/04/2024"
+      ],
+      "local_thread_count": 3,
+      "local_post_count": 4,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "fleet-orders",
+      "tested_url": "https://www.fisherydb.com/group/fleet-orders/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/fleet-orders/discussion",
+      "page_title": "Discussion - FLEET ORDERS | FISHERYDB",
+      "detected_group_title": "FLEET ORDERS",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 0,
+      "local_post_count": 0,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "fs-catches",
+      "tested_url": "https://www.fisherydb.com/group/fs-catches/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/fs-catches/discussion",
+      "page_title": "Discussion - FS catches | FISHERYDB",
+      "detected_group_title": "FS catches",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 1,
+      "local_post_count": 1,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "fs-issues",
+      "tested_url": "https://www.fisherydb.com/group/fs-issues/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/fs-issues/discussion",
+      "page_title": "Discussion - FS ISSUES | FISHERYDB",
+      "detected_group_title": "FS ISSUES",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Nik Nik",
+        "R.save",
+        "FS AWX некорректная работа 11.10.2025",
+        "FS ERS журнал 11.10.2025",
+        "FS Восстановление жесткого диска 09.10.2025",
+        "FS Inm-c обслуживание 08.10.2025"
+      ],
+      "visible_dates_sample": [
+        "October 11, 2025",
+        "11.10.2025",
+        "October 9, 2025",
+        "09.10.2025",
+        "October 8, 2025",
+        "08.10.2025"
+      ],
+      "local_thread_count": 30,
+      "local_post_count": 112,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "fs-orders",
+      "tested_url": "https://www.fisherydb.com/group/fs-orders/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/fs-orders/discussion",
+      "page_title": "Discussion - FS orders | FISHERYDB",
+      "detected_group_title": "FS orders",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 8,
+      "local_post_count": 11,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "fsea-cathes",
+      "tested_url": "https://www.fisherydb.com/group/fsea-cathes/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/fsea-cathes/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 1,
+      "local_post_count": 1,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "fsea-orders",
+      "tested_url": "https://www.fisherydb.com/group/fsea-orders/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/fsea-orders/discussion",
+      "page_title": "Discussion - FSea orders | FISHERYDB",
+      "detected_group_title": "FSea orders",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 23,
+      "local_post_count": 37,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "ft-issues",
+      "tested_url": "https://www.fisherydb.com/group/ft-issues/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/ft-issues/discussion",
+      "page_title": "Discussion - FT ISSUES | FISHERYDB",
+      "detected_group_title": "FT ISSUES",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "FT Кабель ИГЭК левый борт 12.10.2025",
+        "12.10.2025 FT- AWX Ploter бросок координат",
+        "FT Кабель ИГЭК правый борт 11.10.2025"
+      ],
+      "visible_dates_sample": [
+        "October 12, 2025",
+        "12.10.2025",
+        "October 11, 2025",
+        "11.10.2025"
+      ],
+      "local_thread_count": 0,
+      "local_post_count": 0,
+      "notes": [
+        "Example: FT ISSUES",
+        "source=seed"
+      ]
+    },
+    {
+      "slug": "ft-orders",
+      "tested_url": "https://www.fisherydb.com/group/ft-orders/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/ft-orders/discussion",
+      "page_title": "Discussion - FT orders | FISHERYDB",
+      "detected_group_title": "FT orders",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "FT Zayavka RE 10-2025 na MRTO 2026 commented.xlsx",
+        "FT Zayavka RE 09-2025.xlsx",
+        "Alex Kuh",
+        "FT RE-10-2025 MRTO",
+        "FT RE-09-2025"
+      ],
+      "visible_dates_sample": [
+        "September 30, 2025",
+        "Sep 30, 2025"
+      ],
+      "local_thread_count": 10,
+      "local_post_count": 22,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "furuno",
+      "tested_url": "https://www.fisherydb.com/group/furuno/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/furuno/discussion",
+      "page_title": "Discussion - FURUNO | FISHERYDB",
+      "detected_group_title": "FURUNO",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "KM_FCV38_SETTINGS_SEP2025",
+        "fa170_installation_manual.pdf",
+        "SME44900F_FA170.pdf",
+        "FA-170 ru.pdf",
+        "FURUNO FCV-38 ECHO SOUNDER SETTINGS",
+        "FURUNO AIS FA-170 INSTALLATION INITIAL SETTINGS",
+        "FURUNO RADAR MANGETRON INITIALIZE"
+      ],
+      "visible_dates_sample": [
+        "September 11, 2025",
+        "June 6, 2025",
+        "February 17, 2025"
+      ],
+      "local_thread_count": 17,
+      "local_post_count": 24,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "fv-catches",
+      "tested_url": "https://www.fisherydb.com/group/fv-catches/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/fv-catches/discussion",
+      "page_title": "Discussion - FV catches | FISHERYDB",
+      "detected_group_title": "FV catches",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 1,
+      "local_post_count": 1,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "fv-orders",
+      "tested_url": "https://www.fisherydb.com/group/fv-orders/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/fv-orders/discussion",
+      "page_title": "Discussion - FV orders | FISHERYDB",
+      "detected_group_title": "FV orders",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 13,
+      "local_post_count": 13,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "honeywell-px4",
+      "tested_url": "https://www.fisherydb.com/group/honeywell-px4/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/honeywell-px4/discussion",
+      "page_title": "Discussion - Honeywell PX4 | FISHERYDB",
+      "detected_group_title": "Honeywell PX4",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "NY_PX_spares.pdf",
+        "bartender fishingsea",
+        "CXONE_V460_Need License to",
+        "Operate.zip",
+        "Intermec PX4i spare parts catalog",
+        "FISH SPECIES LABELS for PX45 - Bartender",
+        "OMRON ONE (CX-PROGRAMMER)",
+        "Printer Honeywell PX45 out of ribbon"
+      ],
+      "visible_dates_sample": [
+        "October 14, 2025",
+        "May 8, 2025",
+        "May 5, 2025",
+        "April 30, 2025"
+      ],
+      "local_thread_count": 16,
+      "local_post_count": 21,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "inmarsat-c",
+      "tested_url": "https://www.fisherydb.com/group/inmarsat-c/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/inmarsat-c/discussion",
+      "page_title": "Discussion - INMARSAT-C | FISHERYDB",
+      "detected_group_title": "INMARSAT-C",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Inmarsat-C отсуствие автоматических посылок automatic report sending fault",
+        "ERS LATVIA MANUALS"
+      ],
+      "visible_dates_sample": [
+        "May 21, 2023",
+        "May 16, 2023"
+      ],
+      "local_thread_count": 2,
+      "local_post_count": 2,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "issues-log-log-polomok",
+      "tested_url": "https://www.fisherydb.com/group/issues-log-log-polomok/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/issues-log-log-polomok/discussion",
+      "page_title": "Discussion - ISSUES LOG /// ЛОГ ПОЛОМОК | FISHERYDB",
+      "detected_group_title": "ISSUES LOG /// ЛОГ ПОЛОМОК",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 0,
+      "local_post_count": 0,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "jotron",
+      "tested_url": "https://www.fisherydb.com/group/jotron/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/jotron/discussion",
+      "page_title": "Discussion - JOTRON | FISHERYDB",
+      "detected_group_title": "JOTRON",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "AIS JOTRON TR-8000"
+      ],
+      "visible_dates_sample": [
+        "August 19, 2024"
+      ],
+      "local_thread_count": 1,
+      "local_post_count": 1,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "km-catches",
+      "tested_url": "https://www.fisherydb.com/group/km-catches/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/km-catches/discussion",
+      "page_title": "Discussion - KM catches | FISHERYDB",
+      "detected_group_title": "KM catches",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 1,
+      "local_post_count": 1,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "km-issues",
+      "tested_url": "https://www.fisherydb.com/group/km-issues/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/km-issues/discussion",
+      "page_title": "Discussion - KM ISSUES | FISHERYDB",
+      "detected_group_title": "KM ISSUES",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "kap.morgun",
+        "KM TRITON. 13.10.2025. Обслуживание тросика на антенне.",
+        "KM VIDEO CCTV. 12.10.2025 - Пропало изображение с камеры KM_NOS_Portal"
+      ],
+      "visible_dates_sample": [
+        "October 13, 2025",
+        "13.10.2025",
+        "October 12, 2025",
+        "12.10.2025",
+        "11.10.2025"
+      ],
+      "local_thread_count": 30,
+      "local_post_count": 108,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "km-orders",
+      "tested_url": "https://www.fisherydb.com/group/km-orders/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/km-orders/discussion",
+      "page_title": "Discussion - KM orders | FISHERYDB",
+      "detected_group_title": "KM orders",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 0,
+      "local_post_count": 0,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "ks-issues",
+      "tested_url": "https://www.fisherydb.com/group/ks-issues/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/ks-issues/discussion",
+      "page_title": "Discussion - KS ISSUES | FISHERYDB",
+      "detected_group_title": "KS ISSUES",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Aleksandr Kh.",
+        "FSea Кабель ИГЭК от 05/10/2025",
+        "FSea Монитор HP СПК"
+      ],
+      "visible_dates_sample": [
+        "October 15, 2025",
+        "05/10/2025",
+        "18.06.2025",
+        "25.08.2024",
+        "October 14, 2025"
+      ],
+      "local_thread_count": 30,
+      "local_post_count": 174,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "lan-staff",
+      "tested_url": "https://www.fisherydb.com/group/lan-staff/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/lan-staff/discussion",
+      "page_title": "Discussion - LAN STAFF | FISHERYDB",
+      "detected_group_title": "LAN STAFF",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 12,
+      "local_post_count": 14,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "marport",
+      "tested_url": "https://www.fisherydb.com/group/marport/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/marport/discussion",
+      "page_title": "Discussion - MARPORT | FISHERYDB",
+      "detected_group_title": "MARPORT",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "MARPORT Network conf Mac Mini old + M3",
+        "MARPORT TVG 20log 30log 40 log"
+      ],
+      "visible_dates_sample": [
+        "January 6, 2025",
+        "November 23, 2024"
+      ],
+      "local_thread_count": 12,
+      "local_post_count": 19,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "marport-1",
+      "tested_url": "https://www.fisherydb.com/group/marport-1/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/marport-1/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 30,
+      "local_post_count": 93,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "maxar-insightexplorer",
+      "tested_url": "https://www.fisherydb.com/group/maxar-insightexplorer/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/maxar-insightexplorer/discussion",
+      "page_title": "Discussion - MAXAR (InsightExplorer) | FISHERYDB",
+      "detected_group_title": "MAXAR (InsightExplorer)",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Microsoft® SQL Server® 2019 Express",
+        "Aleksandr Kh.",
+        "www.dropbox.com InsightExplorerFullSetup_2.6.1717.exe Shared with Dropbox",
+        "www.seastar.cloud",
+        "Microsoft® SQL Server® 2019 Express for Insight Exlorer",
+        "IE software - update to v.2.6.1717",
+        "IE Проблема с доступом UNABLE TO REACH MARINE SERVER"
+      ],
+      "visible_dates_sample": [
+        "April 17, 2024",
+        "Apr 18, 2024",
+        "February 26, 2024",
+        "2.6.1717",
+        "January 30, 2024"
+      ],
+      "local_thread_count": 6,
+      "local_post_count": 8,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "mk-issues",
+      "tested_url": "https://www.fisherydb.com/group/mk-issues/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/mk-issues/discussion",
+      "page_title": "Discussion - MK ISSUES | FISHERYDB",
+      "detected_group_title": "MK ISSUES",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Marshal Vasilevskij",
+        "M.Krylov",
+        "FV 07.10.2025 CCTV Вышла из строя камера \"DECK_TRANSL\"",
+        "FK - ИГЭК ПБ + FS70 s.n. 20060063 25.09.2025"
+      ],
+      "visible_dates_sample": [
+        "October 7, 2025",
+        "07.10.2025",
+        "September 25, 2025",
+        "25.09.2025"
+      ],
+      "local_thread_count": 30,
+      "local_post_count": 52,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "mn-issue",
+      "tested_url": "https://www.fisherydb.com/group/mn-issue/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/mn-issue/discussion",
+      "page_title": "Discussion - MN ISSUE | FISHERYDB",
+      "detected_group_title": "MN ISSUE",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 10,
+      "local_post_count": 12,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "monitoring",
+      "tested_url": "https://www.fisherydb.com/group/monitoring/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/monitoring/discussion",
+      "page_title": "Discussion - MONITORING | FISHERYDB",
+      "detected_group_title": "MONITORING",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "fishweb.cls.fr",
+        "maritimeoptima.com",
+        "AIS, INM-C, TRITON мониторинг - порядок оповещения"
+      ],
+      "visible_dates_sample": [
+        "August 27, 2024"
+      ],
+      "local_thread_count": 1,
+      "local_post_count": 1,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "mrto-2022-2023-2024",
+      "tested_url": "https://www.fisherydb.com/group/mrto-2022-2023-2024/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/mrto-2022-2023-2024/discussion",
+      "page_title": "Discussion - MRTO 2022-2023-2024 | FISHERYDB",
+      "detected_group_title": "MRTO 2022-2023-2024",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 0,
+      "local_post_count": 0,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "mrto-obshchie-voprosy",
+      "tested_url": "https://www.fisherydb.com/group/mrto-obshchie-voprosy/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/mrto-obshchie-voprosy/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 5,
+      "local_post_count": 7,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "mv-issues",
+      "tested_url": "https://www.fisherydb.com/group/mv-issues/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/mv-issues/discussion",
+      "page_title": "Discussion - MV ISSUES | FISHERYDB",
+      "detected_group_title": "MV ISSUES",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Marshal Vasilevskij",
+        "FV 12.10.2025 Ribbon Honeywell PX45 192.168.60.222",
+        "FV 08.10.2025 TrawlTeck - некорректный обсчет длины ваера ЛБ"
+      ],
+      "visible_dates_sample": [
+        "October 12, 2025",
+        "12.10.2025",
+        "October 8, 2025",
+        "08.10.2025"
+      ],
+      "local_thread_count": 30,
+      "local_post_count": 71,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "network",
+      "tested_url": "https://www.fisherydb.com/group/network/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/network/discussion",
+      "page_title": "Discussion - NETWORK | FISHERYDB",
+      "detected_group_title": "NETWORK",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Alex Kuh",
+        "FT Удаленный доступ к ПК через программу RealVNC",
+        "FT Ship Network установка оборудования, подключение и настройка"
+      ],
+      "visible_dates_sample": [
+        "August 27, 2025"
+      ],
+      "local_thread_count": 12,
+      "local_post_count": 17,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "obshchie-voprosy",
+      "tested_url": "https://www.fisherydb.com/group/obshchie-voprosy/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/obshchie-voprosy/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 11,
+      "local_post_count": 21,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "other-equipment",
+      "tested_url": "https://www.fisherydb.com/group/other-equipment/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/other-equipment/discussion",
+      "page_title": "Discussion - OTHER EQUIPMENT | FISHERYDB",
+      "detected_group_title": "OTHER EQUIPMENT",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Nik Nik",
+        "BNWAS - КОНТРОЛЬ ПРИСУТСТВИЯ НА МОСТИКЕ BR-500",
+        "INVEO HERO web sensors"
+      ],
+      "visible_dates_sample": [
+        "September 23, 2025",
+        "August 21, 2025",
+        "Sep 04, 2025",
+        "04.08.2025"
+      ],
+      "local_thread_count": 30,
+      "local_post_count": 46,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "other-equipment-on-board",
+      "tested_url": "https://www.fisherydb.com/group/other-equipment-on-board/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/other-equipment-on-board/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 3,
+      "local_post_count": 3,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "raritan",
+      "tested_url": "https://www.fisherydb.com/group/raritan/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/raritan/discussion",
+      "page_title": "Discussion - RARITAN | FISHERYDB",
+      "detected_group_title": "RARITAN",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "kap.morgun",
+        "KM RARITAN. Обновление версии прошивки до 3.9.0",
+        "RARITAN - моргает изображение при входе на клиента через WEB интерфейс"
+      ],
+      "visible_dates_sample": [
+        "August 28, 2025",
+        "27.08.2025",
+        "July 13, 2022"
+      ],
+      "local_thread_count": 2,
+      "local_post_count": 2,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "rjabina",
+      "tested_url": "https://www.fisherydb.com/group/rjabina/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/rjabina/discussion",
+      "page_title": "Discussion - RJABINA | FISHERYDB",
+      "detected_group_title": "RJABINA",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "kap.morgun",
+        "in KM ISSUES",
+        "КВУ Рябина. ГГС для швартовых команд.",
+        "КВУ Рябина. Восстановление ГГ ВП на корме (KM)."
+      ],
+      "visible_dates_sample": [
+        "April 13, 2023",
+        "30.03.2023",
+        "Nov 10, 2023",
+        "January 31, 2023",
+        "29.01.2023"
+      ],
+      "local_thread_count": 9,
+      "local_post_count": 12,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "simrad",
+      "tested_url": "https://www.fisherydb.com/group/simrad/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/simrad/discussion",
+      "page_title": "Discussion - SIMRAD | FISHERYDB",
+      "detected_group_title": "SIMRAD",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "kap.morgun",
+        "Alex Kuh",
+        "KM SIMRAD FS-70 -> ES80. Настройка линии трала с ТЗ FS-70 на эхолот ES-80",
+        "Сбой в работе системы Simrad TV80"
+      ],
+      "visible_dates_sample": [
+        "October 5, 2025",
+        "04.09.2025",
+        "May 12, 2025"
+      ],
+      "local_thread_count": 10,
+      "local_post_count": 15,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "simrad-1",
+      "tested_url": "https://www.fisherydb.com/group/simrad-1/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/simrad-1/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 6,
+      "local_post_count": 7,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "staff-only",
+      "tested_url": "https://www.fisherydb.com/group/staff-only/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/staff-only/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 7,
+      "local_post_count": 7,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "starlink",
+      "tested_url": "https://www.fisherydb.com/group/starlink/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/starlink/discussion",
+      "page_title": "Discussion - STARLINK | FISHERYDB",
+      "detected_group_title": "STARLINK",
+      "status": "PRIVATE_OR_LOGIN_REQUIRED",
+      "visible_topic_titles_sample": [],
+      "visible_dates_sample": [],
+      "local_thread_count": 12,
+      "local_post_count": 18,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "starlink-iridium-bandle",
+      "tested_url": "https://www.fisherydb.com/group/starlink-iridium-bandle/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/starlink-iridium-bandle/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 3,
+      "local_post_count": 3,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "transas",
+      "tested_url": "https://www.fisherydb.com/group/transas/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/transas/discussion",
+      "page_title": "Discussion - TRANSAS | FISHERYDB",
+      "detected_group_title": "TRANSAS",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "kap.morgun",
+        "KM TRANSAS NS2500. 03.09.2025 обновление зон"
+      ],
+      "visible_dates_sample": [
+        "September 5, 2025",
+        "03.09.2025",
+        "16.02.2023"
+      ],
+      "local_thread_count": 2,
+      "local_post_count": 4,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "trawltec",
+      "tested_url": "https://www.fisherydb.com/group/trawltec/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/trawltec/discussion",
+      "page_title": "Discussion - TRAWLTEC | FISHERYDB",
+      "detected_group_title": "TRAWLTEC",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "kap.morgun",
+        "Василий Васильев",
+        "Alex Kuh",
+        "KM TRAWLTEC 2000 Manual (на русском)",
+        "Хомут для дополнительной фиксации шланга."
+      ],
+      "visible_dates_sample": [
+        "December 1, 2024",
+        "October 26, 2023",
+        "May 20, 2025"
+      ],
+      "local_thread_count": 3,
+      "local_post_count": 6,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "triton",
+      "tested_url": "https://www.fisherydb.com/group/triton/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/triton/discussion",
+      "page_title": "Discussion - TRITON | FISHERYDB",
+      "detected_group_title": "TRITON",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "RS485 connector pinouts",
+        "TRITON AWX новые требования ЯНВ 2025"
+      ],
+      "visible_dates_sample": [
+        "April 18, 2025",
+        "January 16, 2025"
+      ],
+      "local_thread_count": 7,
+      "local_post_count": 8,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "trondheim-issues",
+      "tested_url": "https://www.fisherydb.com/group/trondheim-issues/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/trondheim-issues/discussion",
+      "page_title": "Group Page | FISHERYDB",
+      "detected_group_title": "This group can't be found.",
+      "status": "NOT_FOUND_OR_BROKEN",
+      "visible_topic_titles_sample": [
+        "This group can't be found."
+      ],
+      "visible_dates_sample": [],
+      "local_thread_count": 24,
+      "local_post_count": 59,
+      "notes": [
+        "source=sqlite"
+      ]
+    },
+    {
+      "slug": "video-cctv",
+      "tested_url": "https://www.fisherydb.com/group/video-cctv/discussion",
+      "http_status": 200,
+      "final_url": "https://www.fisherydb.com/group/video-cctv/discussion",
+      "page_title": "Discussion - VIDEO CCTV | FISHERYDB",
+      "detected_group_title": "VIDEO CCTV",
+      "status": "PUBLIC_WITH_CONTENT",
+      "visible_topic_titles_sample": [
+        "Василий Васильев",
+        "DAHUA camera IPC-HFW3841E-SA video stream frozen",
+        "HIKVISION - браузер не пускает на WEB интерфейс"
+      ],
+      "visible_dates_sample": [
+        "October 7, 2025",
+        "August 1, 2025",
+        "Aug 03, 2025"
+      ],
+      "local_thread_count": 4,
+      "local_post_count": 6,
+      "notes": [
+        "source=sqlite"
+      ]
+    }
+  ]
+}

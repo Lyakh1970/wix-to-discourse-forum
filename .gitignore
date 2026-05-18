@@ -47,6 +47,7 @@ logs/
 data/exported/
 data/attachments/
 data/working/pre_repo_overlay/
+data/working/*auth*.json
 *.json
 !data/reports/*.json
 !config/*.example

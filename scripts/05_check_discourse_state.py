@@ -1,15 +1,9 @@
-"""Placeholder script.
+from __future__ import annotations
 
-Purpose:
-Read-only Discourse inventory via API.
-
-Do not create, update, delete or import anything in this script.
-"""
-
-def main() -> int:
-    print("TODO: implement read-only Discourse inventory after API access is provided.")
-    return 0
+import runpy
+from pathlib import Path
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    target = Path(__file__).with_name("05_discourse_inventory.py")
+    runpy.run_path(str(target), run_name="__main__")

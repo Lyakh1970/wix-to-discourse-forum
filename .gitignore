@@ -25,6 +25,8 @@ MANIFEST
 
 # Virtual environments
 venv/
+.venv/
+.venv-audit-ng/
 env/
 ENV/
 env.bak/
@@ -44,6 +46,7 @@ logs/
 # Data files
 data/exported/
 data/attachments/
+data/working/pre_repo_overlay/
 *.json
 !config/*.example
 !package.json

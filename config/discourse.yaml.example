@@ -1,0 +1,4 @@
+base_url: "https://fisherydb.forum"
+api_username: ""
+api_key_env: "DISCOURSE_API_KEY"
+read_only: true

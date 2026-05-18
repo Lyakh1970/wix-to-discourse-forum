@@ -1,0 +1,5 @@
+# Placeholder for normalized Wix -> Discourse category mapping.
+# Prefer importing/converting from category_mapping.json and CATEGORY_MAPPING_REVIEW.md
+# in the primary local export folder.
+
+mappings: []

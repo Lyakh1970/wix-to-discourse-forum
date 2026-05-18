@@ -1,0 +1,13 @@
+# Known Wix Groups discussion URLs.
+# This is an initial seed list. Expand from forum_structure_detailed.json or other source files.
+
+groups:
+  - slug: ft-issues
+    url: https://www.fisherydb.com/group/ft-issues/discussion
+    notes: "Example: FT ISSUES"
+  - slug: chE4ZQ
+    url: https://www.fisherydb.com/group/chE4ZQ/discussion
+    notes: "May be private/empty/broken; verify"
+  - slug: catsat
+    url: https://www.fisherydb.com/group/catsat/discussion
+    notes: "Example: CATSAT-related group"

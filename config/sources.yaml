@@ -1,0 +1,14 @@
+# Source locations for the migration audit.
+
+primary_local_export:
+  path: "E:\\OneDrive\\Documents\\Claude\\projects\\fisherydb-forum-parser"
+  description: "Main December 2025 VS Code + Claude Code parser project"
+
+historical_sources:
+  - path: "C:\\Users\\MIXA-BEAR\\OneDrive\\Documents\\Cursor\\DISCOURSE_SELFHOSTED"
+    description: "Discourse self-hosted work folder; use later for Discourse cleanup/inventory"
+  - path: "C:\\Users\\MIXA-BEAR\\OneDrive\\Documents\\Cursor\\fisherydb-forum"
+  - path: "C:\\Users\\MIXA-BEAR\\OneDrive\\Documents\\Cursor\\fisherydb-forum-migration"
+  - path: "C:\\Users\\MIXA-BEAR\\OneDrive\\Documents\\Cursor\\new_forum_discourse"
+  - path: "C:\\Users\\MIXA-BEAR\\OneDrive\\Documents\\Cursor\\NEW_WIX_GITHUB_SCRAPER"
+  - path: "C:\\Users\\MIXA-BEAR\\OneDrive\\Documents\\Cursor\\bot_wix_discourse"

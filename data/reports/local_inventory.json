@@ -1,0 +1,2078 @@
+{
+  "root": "E:\\OneDrive\\Documents\\Claude\\projects\\fisherydb-forum-parser",
+  "total_files": 1252,
+  "by_extension": {
+    ".13mb": 1,
+    ".bin": 1,
+    ".db": 1,
+    ".doc": 1,
+    ".docx": 6,
+    ".example": 1,
+    ".html": 1,
+    ".jpg": 921,
+    ".json": 66,
+    ".log": 1,
+    ".md": 2,
+    ".pdf": 53,
+    ".png": 121,
+    ".py": 9,
+    ".pyc": 8,
+    ".sample": 14,
+    ".txt": 9,
+    ".xlsx": 15,
+    ".zip": 13,
+    "<no extension>": 8
+  },
+  "json_files": [
+    {
+      "path": "auth_state.json",
+      "suffix": ".json",
+      "size_bytes": 7084
+    },
+    {
+      "path": "category_mapping.json",
+      "suffix": ".json",
+      "size_bytes": 2958
+    },
+    {
+      "path": "discourse_categories.json",
+      "suffix": ".json",
+      "size_bytes": 164732
+    },
+    {
+      "path": ".claude\\settings.local.json",
+      "suffix": ".json",
+      "size_bytes": 218
+    },
+    {
+      "path": "output\\import_progress.json",
+      "suffix": ".json",
+      "size_bytes": 414749
+    },
+    {
+      "path": "output\\progress.json",
+      "suffix": ".json",
+      "size_bytes": 34832
+    },
+    {
+      "path": "output\\belize-orbcomm\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 52062
+    },
+    {
+      "path": "output\\brands\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 6467
+    },
+    {
+      "path": "output\\catches\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 12200
+    },
+    {
+      "path": "output\\catsat\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 58642
+    },
+    {
+      "path": "output\\ff-issues\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 317689
+    },
+    {
+      "path": "output\\ff-orders\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 34415
+    },
+    {
+      "path": "output\\fk-catches\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 12019
+    },
+    {
+      "path": "output\\fk-orders\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 227556
+    },
+    {
+      "path": "output\\fleet-express\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 28967
+    },
+    {
+      "path": "output\\fs-catches\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 4426
+    },
+    {
+      "path": "output\\fs-issues\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 532798
+    },
+    {
+      "path": "output\\fs-orders\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 70393
+    },
+    {
+      "path": "output\\fsea-cathes\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 4454
+    },
+    {
+      "path": "output\\fsea-orders\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 232494
+    },
+    {
+      "path": "output\\ft-orders\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 136400
+    },
+    {
+      "path": "output\\furuno\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 222031
+    },
+    {
+      "path": "output\\fv-catches\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 4426
+    },
+    {
+      "path": "output\\fv-orders\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 95371
+    },
+    {
+      "path": "output\\honeywell-px4\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 332895
+    },
+    {
+      "path": "output\\inmarsat-c\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 13699
+    },
+    {
+      "path": "output\\jotron\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 22731
+    },
+    {
+      "path": "output\\km-catches\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 4442
+    },
+    {
+      "path": "output\\km-issues\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 952955
+    },
+    {
+      "path": "output\\ks-issues\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 1305896
+    },
+    {
+      "path": "output\\lan-staff\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 300923
+    },
+    {
+      "path": "output\\marport\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 165300
+    },
+    {
+      "path": "output\\marport-1\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 944601
+    },
+    {
+      "path": "output\\maxar-insightexplorer\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 59175
+    },
+    {
+      "path": "output\\mk-issues\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 594357
+    },
+    {
+      "path": "output\\mn-issue\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 50381
+    },
+    {
+      "path": "output\\monitoring\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 9580
+    },
+    {
+      "path": "output\\mrto-obshchie-voprosy\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 82358
+    },
+    {
+      "path": "output\\mv-issues\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 494304
+    },
+    {
+      "path": "output\\network\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 282884
+    },
+    {
+      "path": "output\\obshchie-voprosy\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 315963
+    },
+    {
+      "path": "output\\other-equipment\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 640503
+    },
+    {
+      "path": "output\\other-equipment-on-board\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 44096
+    },
+    {
+      "path": "output\\raritan\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 39909
+    },
+    {
+      "path": "output\\rjabina\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 86582
+    },
+    {
+      "path": "output\\simrad\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 168802
+    },
+    {
+      "path": "output\\simrad-1\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 50447
+    },
+    {
+      "path": "output\\staff-only\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 200692
+    },
+    {
+      "path": "output\\starlink\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 277311
+    },
+    {
+      "path": "output\\starlink-iridium-bandle\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 15274
+    },
+    {
+      "path": "output\\transas\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 49311
+    },
+    {
+      "path": "output\\trawltec\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 82865
+    },
+    {
+      "path": "output\\triton\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 87171
+    },
+    {
+      "path": "output\\trondheim-issues\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 553737
+    },
+    {
+      "path": "output\\video-cctv\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 54449
+    },
+    {
+      "path": "output\\_cctv\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 6977
+    },
+    {
+      "path": "output\\_flir\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 155238
+    },
+    {
+      "path": "output\\_gyro\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 11460
+    },
+    {
+      "path": "output\\_nmea-1\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 27772
+    },
+    {
+      "path": "output\\_olex\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 88879
+    },
+    {
+      "path": "output\\__ais\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 54147
+    },
+    {
+      "path": "output\\__q-a\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 130932
+    },
+    {
+      "path": "output\\___fs\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 67240
+    },
+    {
+      "path": "output\\___km\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 67517
+    },
+    {
+      "path": "output\\___ks\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 138382
+    },
+    {
+      "path": "output\\___mk\\threads.json",
+      "suffix": ".json",
+      "size_bytes": 213599
+    }
+  ],
+  "html_files": [
+    {
+      "path": "frame_content.html",
+      "suffix": ".html",
+      "size_bytes": 1750167
+    }
+  ],
+  "markdown_files": [
+    {
+      "path": "CATEGORY_MAPPING_REVIEW.md",
+      "suffix": ".md",
+      "size_bytes": 10280
+    },
+    {
+      "path": "README.md",
+      "suffix": ".md",
+      "size_bytes": 0
+    }
+  ],
+  "attachment_like_files_count": 1139,
+  "attachment_like_files_sample": [
+    {
+      "path": "Forum structure.txt",
+      "suffix": ".txt",
+      "size_bytes": 4884
+    },
+    {
+      "path": "frame_screenshot.png",
+      "suffix": ".png",
+      "size_bytes": 186002
+    },
+    {
+      "path": "group_screenshot.png",
+      "suffix": ".png",
+      "size_bytes": 52305
+    },
+    {
+      "path": "requirements.txt",
+      "suffix": ".txt",
+      "size_bytes": 141
+    },
+    {
+      "path": "test_md_output.txt",
+      "suffix": ".txt",
+      "size_bytes": 1853
+    },
+    {
+      "path": "output\\import_log.txt",
+      "suffix": ".txt",
+      "size_bytes": 360254
+    },
+    {
+      "path": "output\\belize-orbcomm\\attachments\\Installation Guide _PS_SIG_VMS-IDP690-MDT7A_V0.5.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 919422
+    },
+    {
+      "path": "output\\belize-orbcomm\\images\\1c0206_362fcada5ff24f79831557ef552e7b68~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 73884
+    },
+    {
+      "path": "output\\belize-orbcomm\\images\\1c0206_3888447d315e4b23889b0b7163ceffb0~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 85410
+    },
+    {
+      "path": "output\\belize-orbcomm\\images\\1c0206_663d99ab5a6340d6ac4e6fc07973201f~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 119553
+    },
+    {
+      "path": "output\\belize-orbcomm\\images\\1c0206_6d4c8aae0a4d494792f657ac8a9d732e~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 78184
+    },
+    {
+      "path": "output\\belize-orbcomm\\images\\1c0206_c55418604ef2488a8586a64cf15e1a35~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 122014
+    },
+    {
+      "path": "output\\belize-orbcomm\\images\\1c0206_d61ce433abe34409aaf75c28de5b0d27~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 76622
+    },
+    {
+      "path": "output\\belize-orbcomm\\images\\1c0206_f96c03ba37dd482da1e1bb916d9eca3f~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 86503
+    },
+    {
+      "path": "output\\belize-orbcomm\\images\\33cb1e_5f34ac4238724ea698fe586b07ad0716~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 2486872
+    },
+    {
+      "path": "output\\belize-orbcomm\\images\\33cb1e_6ce1ff366bfd4561bdf3089c23635036~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 2884551
+    },
+    {
+      "path": "output\\belize-orbcomm\\images\\33cb1e_a9a34eaef24b479e97125b5faaf4f1aa~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 2144610
+    },
+    {
+      "path": "output\\belize-orbcomm\\images\\33cb1e_ee0fabdf4891467eb59e5fba9b8a9e58~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 2786668
+    },
+    {
+      "path": "output\\brands\\images\\096318_14e2b7c04c1748a0b12219a6fb345d7b~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 233776
+    },
+    {
+      "path": "output\\catches\\images\\096318_999421234b214534bb9303669d2ebb0e~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 112491
+    },
+    {
+      "path": "output\\catsat\\images\\096318_dc6c504d2f8343239b80f80731551903~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 13998
+    },
+    {
+      "path": "output\\catsat\\images\\096318_dd0aaf9a0d5544a993a270fa1868a046~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 24238
+    },
+    {
+      "path": "output\\catsat\\images\\1c0206_e7154b100b5a4c6b93309fd334829fa3~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 93690
+    },
+    {
+      "path": "output\\catsat\\images\\5f4400_6dd6b22a49474ad6800a063fad1052fc~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 13692
+    },
+    {
+      "path": "output\\catsat\\images\\5f4400_aa7f7eb5dd6644b0924a103bfff3852a~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 29446
+    },
+    {
+      "path": "output\\catsat\\images\\5f4400_c0df977fb0de4912b3deda258eec17ad~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 74565
+    },
+    {
+      "path": "output\\catsat\\images\\71eb89_79b9026248474dbcbb286a5ab1ffcf44~mv2.png",
+      "suffix": ".png",
+      "size_bytes": 222978
+    },
+    {
+      "path": "output\\catsat\\images\\c80201_5f825c5023d04c38acb4c6761e4e2b9e~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 115046
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_0504d3a56b314ef9809b8e438995da26~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 138322
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_0733a35c31ac45cfa2a53ca429bdd9b2~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 114740
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_0b1c2b178d144bd29d3e12c51ceab6e6~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 69040
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_13534062c8884e8c98b112f9c328487b~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 81268
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_23574efa1e504755a8cac19117ae3ca3~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 95152
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_2df6c2cae189469194f815d2e6a1f4ec~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 133970
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_3ed19eac8e704327b9b9a98e49e3ef8a~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 183941
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_5a0e49f61bc245108d6a52a33b4a97c7~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 108531
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_5a557bf01bc841fcac841d54deb4677f~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 100650
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_638bc871efab4505b1157369cb29efe9~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 88808
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_6848a2f1d9e748fb9c319a845880ac77~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 167895
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_6a5f51e8317f45799ad8b8ac3eb7410e~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 109635
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_6fc09eed43c546c5b96c1e74c0d95e40~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 138035
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_83c37c45369e464b85c374d90a50b9a3~mv2.png",
+      "suffix": ".png",
+      "size_bytes": 24484
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_84430fb36bc94be5aaf664eee6d31108~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 101855
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_87fa860128ac45b2aaca51c590d8b25b~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 121704
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_95fc7d95f0db4f40b3018466bde1622d~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 212090
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_a006dc9910184ea3bf479a3a04ba8ef8~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 110895
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_ab760f257fb745159ac9edc26b19a47a~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 147513
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_b72fa88a62ec47c2b0680e7b3eacb4b2~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 129576
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_b871adc9cdd4488b97bde1db6d2c6c79~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 184396
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_bcf5fb0c11a7413590704c649d3c8c5e~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 149618
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_be558248607b4530aad03f6b124ffde4~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 194863
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_d747d1635e204b8db4996d282bdfb5c7~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 89157
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_d9b33d1406894b078407540a0a6b763d~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 112648
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_dd3d19c0d6da41c385468c7abb1d24e6~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 142177
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_e0df7ee66fbb4c0681005dc6cb51cd87~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 377115
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_e304cfd45c6c4b7c89c7b34e2df9e475~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 128058
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_e878a71e5ba64244b6e3fadf138be1a0~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 73626
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_ea817e50056247448bcb63784ec32856~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 122623
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_ea91e325c7e6446ebf8a4715846f8a1b~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 135184
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_ebc7506ebe994b5893443e28a7438c70~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 143571
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_eeda4a4ce8824a5c82fbfb1f5b3624a0~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 136909
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_f6b6d8925f1d45568c60c0bfe297ddc4~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 148688
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_f7aab728b174499c821d7ef3c29d5d14~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 108037
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_f954c64d5fbb48b186b4f1db1a29b164~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 124084
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_fbb281770ff24a9f944a4dcea48d67f7~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 145321
+    },
+    {
+      "path": "output\\ff-issues\\images\\101966_ffc1950dafab450aaa2d42379f531769~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 149178
+    },
+    {
+      "path": "output\\ff-orders\\images\\096318_0855ebf45aa0486f9afac9372884feaf~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 151609
+    },
+    {
+      "path": "output\\ff-orders\\images\\096318_21aae012bf164430abf5de38e3105917~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 54684
+    },
+    {
+      "path": "output\\ff-orders\\images\\096318_3f1b2a80b5de4ac9b08c737b08da687b~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 97494
+    },
+    {
+      "path": "output\\ff-orders\\images\\096318_cb8c9f86d432473f8ddf3702c9a46e58~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 198747
+    },
+    {
+      "path": "output\\ff-orders\\images\\096318_e17eb72163f24ec38af0b48651478428~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 83012
+    },
+    {
+      "path": "output\\fk-catches\\images\\79c6bc_66e237d067784e95be80304a35161929~mv2.png",
+      "suffix": ".png",
+      "size_bytes": 4884063
+    },
+    {
+      "path": "output\\fk-orders\\attachments\\FK - PKRE - podtverzhdenie polucheniya snabzheniya (16.02.2024) (Correct).xlsx",
+      "suffix": ".xlsx",
+      "size_bytes": 13884
+    },
+    {
+      "path": "output\\fk-orders\\attachments\\FK - PKRE - podtverzhdenie polucheniya snabzheniya (22.03.2024).xlsx",
+      "suffix": ".xlsx",
+      "size_bytes": 14491
+    },
+    {
+      "path": "output\\fk-orders\\attachments\\На обсуждение от 24.11.2024.docx",
+      "suffix": ".docx",
+      "size_bytes": 516609
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_0cd96261d71645468fad503ed595224d~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 345023
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_0ddaf486e8d44c4aa357d91d87f0252e~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 61886
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_1474b2678f2b47438f0dfe83a6651e44~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 201548
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_35b83934b9fe404fa24c1602ca5d084b~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 83926
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_3a07343e5bf749b68cf9e9fb5c2fae5a~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 219965
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_4266451729364b69b381a3874ac92779~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 177333
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_4aaa9587085b4858b72ad08e7c9e1698~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 137157
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_6bbb0c1a0b274c0ebc1e06a3dcc81a80~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 157149
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_6f41b00e5ede43b88e6bdbb5fd6abb56~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 270095
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_76b7f19a59ae4a209e64c659976fdc57~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 385027
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_8ea570fbab9d43f09b4facd25dde34aa~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 62949
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_92fd9181fb2a4b2e9f3385770371a1bb~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 188880
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_a6664a8acaf84be588d4f3895e439bf9~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 119259
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_ab7a7d2ffd804fe3878c49329dc3dddb~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 65790
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_b85443374ca44030b0a5f8d2760fa586~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 101131
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_b9b07a173c524e4d8692e515aca92355~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 150357
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_c29eaf4b4bff432586ee3a3b6b53293e~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 86732
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_c354d3ceb50d4452813af62f23a13d6f~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 296652
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_defead6cb68e49e1847eb839fa222f61~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 192122
+    },
+    {
+      "path": "output\\fk-orders\\images\\096318_ff50dedeb2ab4d59a6310089bab6662a~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 245866
+    },
+    {
+      "path": "output\\fk-orders\\images\\0a3d65_1b629af4ad474e6daf3090132ebed90b~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 6871314
+    },
+    {
+      "path": "output\\fk-orders\\images\\0a3d65_1eaa4dd34b3d421480bc1611bb3dc99c~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 7380613
+    },
+    {
+      "path": "output\\fk-orders\\images\\0a3d65_3cf7e9c6577f4a74a0e492e8378ef94d~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 6784638
+    },
+    {
+      "path": "output\\fk-orders\\images\\0a3d65_4f49eee8f18f41998d94686eb706596e~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 7391157
+    },
+    {
+      "path": "output\\fk-orders\\images\\0a3d65_5a8f56a90bf94b75a2b81fc21b1d58f5~mv2.jpg",
+      "suffix": ".jpg",
+      "size_bytes": 177481
+    }
+  ],
+  "candidate_forum_files": [
+    "category_mapping.json",
+    "CATEGORY_MAPPING_REVIEW.md",
+    "discourse_categories.json",
+    "parser.log"
+  ],
+  "detected_counts": {
+    "json_files_scanned": 66,
+    "possible_records": 589,
+    "possible_posts": 1236,
+    "possible_comments": 647,
+    "possible_attachments_referenced": 1158,
+    "files_with_posts_like_data": [],
+    "thread_json_files": [
+      {
+        "path": "output\\belize-orbcomm\\threads.json",
+        "category": "belize-orbcomm",
+        "declared_thread_count": 2,
+        "threads": 2,
+        "posts": 3,
+        "comments": 1,
+        "attachments": 12,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\brands\\threads.json",
+        "category": "brands",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 1,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\catches\\threads.json",
+        "category": "catches",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 1,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\catsat\\threads.json",
+        "category": "catsat",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 7,
+        "comments": 4,
+        "attachments": 8,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\ff-issues\\threads.json",
+        "category": "ff-issues",
+        "declared_thread_count": 25,
+        "threads": 25,
+        "posts": 38,
+        "comments": 13,
+        "attachments": 38,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\ff-orders\\threads.json",
+        "category": "ff-orders",
+        "declared_thread_count": 5,
+        "threads": 5,
+        "posts": 5,
+        "comments": 0,
+        "attachments": 5,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\fk-catches\\threads.json",
+        "category": "fk-catches",
+        "declared_thread_count": 2,
+        "threads": 2,
+        "posts": 2,
+        "comments": 0,
+        "attachments": 1,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\fk-orders\\threads.json",
+        "category": "fk-orders",
+        "declared_thread_count": 20,
+        "threads": 20,
+        "posts": 31,
+        "comments": 11,
+        "attachments": 40,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\fleet-express\\threads.json",
+        "category": "fleet-express",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 4,
+        "comments": 1,
+        "attachments": 4,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\fs-catches\\threads.json",
+        "category": "fs-catches",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 0,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\fs-issues\\threads.json",
+        "category": "fs-issues",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 112,
+        "comments": 82,
+        "attachments": 31,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\fs-orders\\threads.json",
+        "category": "fs-orders",
+        "declared_thread_count": 8,
+        "threads": 8,
+        "posts": 11,
+        "comments": 3,
+        "attachments": 10,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\fsea-cathes\\threads.json",
+        "category": "fsea-cathes",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 0,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\fsea-orders\\threads.json",
+        "category": "fsea-orders",
+        "declared_thread_count": 23,
+        "threads": 23,
+        "posts": 37,
+        "comments": 14,
+        "attachments": 34,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\ft-orders\\threads.json",
+        "category": "ft-orders",
+        "declared_thread_count": 10,
+        "threads": 10,
+        "posts": 22,
+        "comments": 12,
+        "attachments": 22,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\furuno\\threads.json",
+        "category": "furuno",
+        "declared_thread_count": 17,
+        "threads": 17,
+        "posts": 24,
+        "comments": 7,
+        "attachments": 32,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\fv-catches\\threads.json",
+        "category": "fv-catches",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 0,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\fv-orders\\threads.json",
+        "category": "fv-orders",
+        "declared_thread_count": 13,
+        "threads": 13,
+        "posts": 13,
+        "comments": 0,
+        "attachments": 15,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\honeywell-px4\\threads.json",
+        "category": "honeywell-px4",
+        "declared_thread_count": 16,
+        "threads": 16,
+        "posts": 21,
+        "comments": 5,
+        "attachments": 48,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\inmarsat-c\\threads.json",
+        "category": "inmarsat-c",
+        "declared_thread_count": 2,
+        "threads": 2,
+        "posts": 2,
+        "comments": 0,
+        "attachments": 1,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\jotron\\threads.json",
+        "category": "jotron",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 3,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\km-catches\\threads.json",
+        "category": "km-catches",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 0,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\km-issues\\threads.json",
+        "category": "km-issues",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 108,
+        "comments": 78,
+        "attachments": 55,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\ks-issues\\threads.json",
+        "category": "ks-issues",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 174,
+        "comments": 144,
+        "attachments": 62,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\lan-staff\\threads.json",
+        "category": "lan-staff",
+        "declared_thread_count": 12,
+        "threads": 12,
+        "posts": 14,
+        "comments": 2,
+        "attachments": 24,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 5
+        }
+      },
+      {
+        "path": "output\\marport\\threads.json",
+        "category": "marport",
+        "declared_thread_count": 12,
+        "threads": 12,
+        "posts": 19,
+        "comments": 7,
+        "attachments": 19,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 2
+        }
+      },
+      {
+        "path": "output\\marport-1\\threads.json",
+        "category": "marport-1",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 93,
+        "comments": 63,
+        "attachments": 8,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\maxar-insightexplorer\\threads.json",
+        "category": "maxar-insightexplorer",
+        "declared_thread_count": 6,
+        "threads": 6,
+        "posts": 8,
+        "comments": 2,
+        "attachments": 11,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 4
+        }
+      },
+      {
+        "path": "output\\mk-issues\\threads.json",
+        "category": "mk-issues",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 52,
+        "comments": 22,
+        "attachments": 130,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\mn-issue\\threads.json",
+        "category": "mn-issue",
+        "declared_thread_count": 10,
+        "threads": 10,
+        "posts": 12,
+        "comments": 2,
+        "attachments": 0,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\monitoring\\threads.json",
+        "category": "monitoring",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 0,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\mrto-obshchie-voprosy\\threads.json",
+        "category": "mrto-obshchie-voprosy",
+        "declared_thread_count": 5,
+        "threads": 5,
+        "posts": 7,
+        "comments": 2,
+        "attachments": 10,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\mv-issues\\threads.json",
+        "category": "mv-issues",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 71,
+        "comments": 41,
+        "attachments": 45,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\network\\threads.json",
+        "category": "network",
+        "declared_thread_count": 12,
+        "threads": 12,
+        "posts": 17,
+        "comments": 5,
+        "attachments": 37,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\obshchie-voprosy\\threads.json",
+        "category": "obshchie-voprosy",
+        "declared_thread_count": 11,
+        "threads": 11,
+        "posts": 21,
+        "comments": 10,
+        "attachments": 23,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\other-equipment\\threads.json",
+        "category": "other-equipment",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 46,
+        "comments": 16,
+        "attachments": 79,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 4
+        }
+      },
+      {
+        "path": "output\\other-equipment-on-board\\threads.json",
+        "category": "other-equipment-on-board",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 3,
+        "comments": 0,
+        "attachments": 8,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\raritan\\threads.json",
+        "category": "raritan",
+        "declared_thread_count": 2,
+        "threads": 2,
+        "posts": 2,
+        "comments": 0,
+        "attachments": 2,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\rjabina\\threads.json",
+        "category": "rjabina",
+        "declared_thread_count": 9,
+        "threads": 9,
+        "posts": 12,
+        "comments": 3,
+        "attachments": 7,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\simrad\\threads.json",
+        "category": "simrad",
+        "declared_thread_count": 10,
+        "threads": 10,
+        "posts": 15,
+        "comments": 5,
+        "attachments": 29,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 1
+        }
+      },
+      {
+        "path": "output\\simrad-1\\threads.json",
+        "category": "simrad-1",
+        "declared_thread_count": 6,
+        "threads": 6,
+        "posts": 7,
+        "comments": 1,
+        "attachments": 4,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\staff-only\\threads.json",
+        "category": "staff-only",
+        "declared_thread_count": 7,
+        "threads": 7,
+        "posts": 7,
+        "comments": 0,
+        "attachments": 1,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\starlink\\threads.json",
+        "category": "starlink",
+        "declared_thread_count": 12,
+        "threads": 12,
+        "posts": 18,
+        "comments": 6,
+        "attachments": 57,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\starlink-iridium-bandle\\threads.json",
+        "category": "starlink-iridium-bandle",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 3,
+        "comments": 0,
+        "attachments": 1,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\transas\\threads.json",
+        "category": "transas",
+        "declared_thread_count": 2,
+        "threads": 2,
+        "posts": 4,
+        "comments": 2,
+        "attachments": 5,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\trawltec\\threads.json",
+        "category": "trawltec",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 6,
+        "comments": 3,
+        "attachments": 19,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\triton\\threads.json",
+        "category": "triton",
+        "declared_thread_count": 7,
+        "threads": 7,
+        "posts": 8,
+        "comments": 1,
+        "attachments": 13,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\trondheim-issues\\threads.json",
+        "category": "trondheim-issues",
+        "declared_thread_count": 24,
+        "threads": 24,
+        "posts": 59,
+        "comments": 35,
+        "attachments": 71,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\video-cctv\\threads.json",
+        "category": "video-cctv",
+        "declared_thread_count": 4,
+        "threads": 4,
+        "posts": 6,
+        "comments": 2,
+        "attachments": 7,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\_cctv\\threads.json",
+        "category": "_cctv",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 1,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\_flir\\threads.json",
+        "category": "_flir",
+        "declared_thread_count": 5,
+        "threads": 5,
+        "posts": 21,
+        "comments": 16,
+        "attachments": 14,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\_gyro\\threads.json",
+        "category": "_gyro",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 2,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\_nmea-1\\threads.json",
+        "category": "_nmea-1",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 3,
+        "comments": 0,
+        "attachments": 5,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\_olex\\threads.json",
+        "category": "_olex",
+        "declared_thread_count": 4,
+        "threads": 4,
+        "posts": 7,
+        "comments": 3,
+        "attachments": 9,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 1
+        }
+      },
+      {
+        "path": "output\\__ais\\threads.json",
+        "category": "__ais",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 7,
+        "comments": 4,
+        "attachments": 2,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\__q-a\\threads.json",
+        "category": "__q-a",
+        "declared_thread_count": 11,
+        "threads": 11,
+        "posts": 15,
+        "comments": 4,
+        "attachments": 18,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\___fs\\threads.json",
+        "category": "___fs",
+        "declared_thread_count": 9,
+        "threads": 9,
+        "posts": 12,
+        "comments": 3,
+        "attachments": 3,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\___km\\threads.json",
+        "category": "___km",
+        "declared_thread_count": 5,
+        "threads": 5,
+        "posts": 7,
+        "comments": 2,
+        "attachments": 12,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      },
+      {
+        "path": "output\\___ks\\threads.json",
+        "category": "___ks",
+        "declared_thread_count": 8,
+        "threads": 8,
+        "posts": 12,
+        "comments": 4,
+        "attachments": 28,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 1
+        }
+      },
+      {
+        "path": "output\\___mk\\threads.json",
+        "category": "___mk",
+        "declared_thread_count": 12,
+        "threads": 12,
+        "posts": 18,
+        "comments": 6,
+        "attachments": 31,
+        "field_quality": {
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "posts_missing_attachments_local_path": 0
+        }
+      }
+    ],
+    "sqlite_databases": [
+      {
+        "path": "output\\forum_data.db",
+        "tables": [
+          "attachments",
+          "authors",
+          "categories",
+          "posts",
+          "threads"
+        ],
+        "counts": {
+          "attachments": 1151,
+          "authors": 22,
+          "categories": 67,
+          "posts": 1236,
+          "threads": 589,
+          "comments": 647,
+          "images": 1055
+        },
+        "field_quality": {
+          "posts_missing_body": 0,
+          "posts_missing_date": 0,
+          "posts_missing_author": 0,
+          "threads_missing_title": 0,
+          "threads_missing_date": 0,
+          "threads_missing_author": 0,
+          "threads_missing_category": 0,
+          "attachments_missing_local_path": 15
+        }
+      }
+    ],
+    "field_quality": {
+      "threads_missing_title": 0,
+      "threads_missing_date": 0,
+      "threads_missing_author": 0,
+      "threads_missing_category": 0,
+      "posts_missing_body": 0,
+      "posts_missing_date": 0,
+      "posts_missing_author": 0,
+      "posts_missing_attachments_local_path": 18
+    }
+  },
+  "warnings": []
+}

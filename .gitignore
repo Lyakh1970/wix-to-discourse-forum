@@ -48,6 +48,7 @@ data/exported/
 data/attachments/
 data/working/pre_repo_overlay/
 *.json
+!data/reports/*.json
 !config/*.example
 !package.json
 

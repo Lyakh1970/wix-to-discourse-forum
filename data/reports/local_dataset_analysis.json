@@ -1,0 +1,2891 @@
+{
+  "root": "E:\\OneDrive\\Documents\\Claude\\projects\\fisherydb-forum-parser",
+  "warnings": [],
+  "key_files": {
+    "forum_data_db": {
+      "exists": true,
+      "path": "output\\forum_data.db",
+      "size_bytes": 11472896
+    },
+    "category_mapping_json": {
+      "exists": true,
+      "path": "category_mapping.json",
+      "size_bytes": 2958
+    },
+    "category_mapping_review_md": {
+      "exists": true,
+      "path": "CATEGORY_MAPPING_REVIEW.md",
+      "size_bytes": 10280
+    },
+    "discourse_categories_json": {
+      "exists": true,
+      "path": "discourse_categories.json",
+      "size_bytes": 164732
+    },
+    "forum_structure_detailed_json": {
+      "exists": false,
+      "path": "E:\\OneDrive\\Documents\\Claude\\projects\\fisherydb-forum-parser\\forum_structure_detailed.json",
+      "size_bytes": null
+    },
+    "auth_state_json": {
+      "exists": true,
+      "path": "auth_state.json",
+      "size_bytes": 7084
+    }
+  },
+  "sqlite": {
+    "exists": true,
+    "path": "output\\forum_data.db",
+    "tables": [
+      "attachments",
+      "authors",
+      "categories",
+      "posts",
+      "threads"
+    ],
+    "counts": {
+      "authors": 22,
+      "categories": 67,
+      "threads": 589,
+      "posts": 1236,
+      "attachments": 1151,
+      "comments": 647,
+      "root_posts": 589,
+      "images": 1055,
+      "non_images": 96
+    },
+    "categories": [
+      {
+        "slug": "fs-issues",
+        "name": "FS ISSUES",
+        "url": "https://www.fisherydb.com/forum/fs-issues",
+        "parent_slug": "issues-log-log-polomok",
+        "declared_thread_count": 0,
+        "actual_thread_count": 30
+      },
+      {
+        "slug": "km-issues",
+        "name": "KM ISSUES",
+        "url": "https://www.fisherydb.com/forum/km-issues",
+        "parent_slug": "issues-log-log-polomok",
+        "declared_thread_count": 0,
+        "actual_thread_count": 30
+      },
+      {
+        "slug": "ks-issues",
+        "name": "KS ISSUES",
+        "url": "https://www.fisherydb.com/forum/ks-issues",
+        "parent_slug": "issues-log-log-polomok",
+        "declared_thread_count": 0,
+        "actual_thread_count": 30
+      },
+      {
+        "slug": "marport-1",
+        "name": "MARPORT",
+        "url": "https://www.fisherydb.com/forum/marport-1",
+        "parent_slug": "equipment",
+        "declared_thread_count": 0,
+        "actual_thread_count": 30
+      },
+      {
+        "slug": "mk-issues",
+        "name": "MK ISSUES",
+        "url": "https://www.fisherydb.com/forum/mk-issues",
+        "parent_slug": "issues-log-log-polomok",
+        "declared_thread_count": 0,
+        "actual_thread_count": 30
+      },
+      {
+        "slug": "mv-issues",
+        "name": "MV ISSUES",
+        "url": "https://www.fisherydb.com/forum/mv-issues",
+        "parent_slug": "issues-log-log-polomok",
+        "declared_thread_count": 0,
+        "actual_thread_count": 30
+      },
+      {
+        "slug": "other-equipment",
+        "name": "OTHER EQUIPMENT",
+        "url": "https://www.fisherydb.com/forum/other-equipment",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 30
+      },
+      {
+        "slug": "ff-issues",
+        "name": "FF ISSUES",
+        "url": "https://www.fisherydb.com/forum/ff-issues",
+        "parent_slug": "issues-log-log-polomok",
+        "declared_thread_count": 0,
+        "actual_thread_count": 25
+      },
+      {
+        "slug": "trondheim-issues",
+        "name": "FT ISSUES",
+        "url": "https://www.fisherydb.com/forum/trondheim-issues",
+        "parent_slug": "issues-log-log-polomok",
+        "declared_thread_count": 0,
+        "actual_thread_count": 24
+      },
+      {
+        "slug": "fsea-orders",
+        "name": "FSea orders",
+        "url": "https://www.fisherydb.com/forum/fsea-orders",
+        "parent_slug": "fleet-orders",
+        "declared_thread_count": 0,
+        "actual_thread_count": 23
+      },
+      {
+        "slug": "fk-orders",
+        "name": "FK orders",
+        "url": "https://www.fisherydb.com/forum/fk-orders",
+        "parent_slug": "fleet-orders",
+        "declared_thread_count": 0,
+        "actual_thread_count": 20
+      },
+      {
+        "slug": "furuno",
+        "name": "Furuno",
+        "url": "https://www.fisherydb.com/forum/furuno",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 17
+      },
+      {
+        "slug": "honeywell-px4",
+        "name": "Honeywell PX4",
+        "url": "https://www.fisherydb.com/forum/honeywell-px4",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 16
+      },
+      {
+        "slug": "fv-orders",
+        "name": "FV orders",
+        "url": "https://www.fisherydb.com/forum/fv-orders",
+        "parent_slug": "fleet-orders",
+        "declared_thread_count": 0,
+        "actual_thread_count": 13
+      },
+      {
+        "slug": "___mk",
+        "name": "MK",
+        "url": "https://www.fisherydb.com/forum/___mk",
+        "parent_slug": "mrto-2022-2023-2024",
+        "declared_thread_count": 0,
+        "actual_thread_count": 12
+      },
+      {
+        "slug": "lan-staff",
+        "name": "LAN STAFF",
+        "url": "https://www.fisherydb.com/forum/lan-staff",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 12
+      },
+      {
+        "slug": "marport",
+        "name": "Marport",
+        "url": "https://www.fisherydb.com/forum/marport",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 12
+      },
+      {
+        "slug": "network",
+        "name": "NETWORK",
+        "url": "https://www.fisherydb.com/forum/network",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 12
+      },
+      {
+        "slug": "starlink",
+        "name": "STARLINK",
+        "url": "https://www.fisherydb.com/forum/starlink",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 12
+      },
+      {
+        "slug": "__q-a",
+        "name": "Q&A",
+        "url": "https://www.fisherydb.com/forum/__q-a",
+        "parent_slug": null,
+        "declared_thread_count": 0,
+        "actual_thread_count": 11
+      },
+      {
+        "slug": "obshchie-voprosy",
+        "name": "Общие вопросы",
+        "url": "https://www.fisherydb.com/forum/obshchie-voprosy",
+        "parent_slug": null,
+        "declared_thread_count": 0,
+        "actual_thread_count": 11
+      },
+      {
+        "slug": "ft-orders",
+        "name": "FT orders",
+        "url": "https://www.fisherydb.com/forum/ft-orders",
+        "parent_slug": "fleet-orders",
+        "declared_thread_count": 0,
+        "actual_thread_count": 10
+      },
+      {
+        "slug": "mn-issue",
+        "name": "MN ISSUES",
+        "url": "https://www.fisherydb.com/forum/mn-issue",
+        "parent_slug": "issues-log-log-polomok",
+        "declared_thread_count": 0,
+        "actual_thread_count": 10
+      },
+      {
+        "slug": "simrad",
+        "name": "Simrad",
+        "url": "https://www.fisherydb.com/forum/simrad",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 10
+      },
+      {
+        "slug": "___fs",
+        "name": "FS",
+        "url": "https://www.fisherydb.com/forum/___fs",
+        "parent_slug": "mrto-2022-2023-2024",
+        "declared_thread_count": 0,
+        "actual_thread_count": 9
+      },
+      {
+        "slug": "rjabina",
+        "name": "RJABINA",
+        "url": "https://www.fisherydb.com/forum/rjabina",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 9
+      },
+      {
+        "slug": "___ks",
+        "name": "KS",
+        "url": "https://www.fisherydb.com/forum/___ks",
+        "parent_slug": "mrto-2022-2023-2024",
+        "declared_thread_count": 0,
+        "actual_thread_count": 8
+      },
+      {
+        "slug": "fs-orders",
+        "name": "FS orders",
+        "url": "https://www.fisherydb.com/forum/fs-orders",
+        "parent_slug": "fleet-orders",
+        "declared_thread_count": 0,
+        "actual_thread_count": 8
+      },
+      {
+        "slug": "staff-only",
+        "name": "Staff Only",
+        "url": "https://www.fisherydb.com/forum/staff-only",
+        "parent_slug": null,
+        "declared_thread_count": 0,
+        "actual_thread_count": 7
+      },
+      {
+        "slug": "triton",
+        "name": "TRITON",
+        "url": "https://www.fisherydb.com/forum/triton",
+        "parent_slug": "monitoring",
+        "declared_thread_count": 0,
+        "actual_thread_count": 7
+      },
+      {
+        "slug": "maxar-insightexplorer",
+        "name": "MAXAR",
+        "url": "https://www.fisherydb.com/forum/maxar-insightexplorer",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 6
+      },
+      {
+        "slug": "simrad-1",
+        "name": "SIMRAD",
+        "url": "https://www.fisherydb.com/forum/simrad-1",
+        "parent_slug": "equipment",
+        "declared_thread_count": 0,
+        "actual_thread_count": 6
+      },
+      {
+        "slug": "___km",
+        "name": "KM",
+        "url": "https://www.fisherydb.com/forum/___km",
+        "parent_slug": "mrto-2022-2023-2024",
+        "declared_thread_count": 0,
+        "actual_thread_count": 5
+      },
+      {
+        "slug": "_flir",
+        "name": "Flir",
+        "url": "https://www.fisherydb.com/forum/_flir",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 5
+      },
+      {
+        "slug": "ff-orders",
+        "name": "FF orders",
+        "url": "https://www.fisherydb.com/forum/ff-orders",
+        "parent_slug": "fleet-orders",
+        "declared_thread_count": 0,
+        "actual_thread_count": 5
+      },
+      {
+        "slug": "mrto-obshchie-voprosy",
+        "name": "MRTO Общие вопросы",
+        "url": "https://www.fisherydb.com/forum/mrto-obshchie-voprosy",
+        "parent_slug": "mrto-2022-2023-2024",
+        "declared_thread_count": 0,
+        "actual_thread_count": 5
+      },
+      {
+        "slug": "_olex",
+        "name": "Olex",
+        "url": "https://fisherydb.com/forum/_olex",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 4
+      },
+      {
+        "slug": "video-cctv",
+        "name": "VIDEO CCTV",
+        "url": "https://www.fisherydb.com/forum/video-cctv",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 4
+      },
+      {
+        "slug": "__ais",
+        "name": "AIS",
+        "url": "https://www.fisherydb.com/forum/__ais",
+        "parent_slug": "monitoring",
+        "declared_thread_count": 0,
+        "actual_thread_count": 3
+      },
+      {
+        "slug": "_nmea-1",
+        "name": "NMEA (2)",
+        "url": "https://www.fisherydb.com/forum/_nmea-1",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 3
+      },
+      {
+        "slug": "catsat",
+        "name": "CATSAT",
+        "url": "https://www.fisherydb.com/forum/catsat",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 3
+      },
+      {
+        "slug": "fleet-express",
+        "name": "Fleet express",
+        "url": "https://www.fisherydb.com/forum/fleet-express",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 3
+      },
+      {
+        "slug": "other-equipment-on-board",
+        "name": "Other equipment on board",
+        "url": "https://www.fisherydb.com/forum/other-equipment-on-board",
+        "parent_slug": "equipment",
+        "declared_thread_count": 0,
+        "actual_thread_count": 3
+      },
+      {
+        "slug": "starlink-iridium-bandle",
+        "name": "STARLINK-IRIDIUM BANDLE",
+        "url": "https://www.fisherydb.com/forum/starlink-iridium-bandle",
+        "parent_slug": "equipment",
+        "declared_thread_count": 0,
+        "actual_thread_count": 3
+      },
+      {
+        "slug": "trawltec",
+        "name": "TRAWLTEC",
+        "url": "https://www.fisherydb.com/forum/trawltec",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 3
+      },
+      {
+        "slug": "belize-orbcomm",
+        "name": "BELIZE ORBCOMM",
+        "url": "https://www.fisherydb.com/forum/belize-orbcomm",
+        "parent_slug": "monitoring",
+        "declared_thread_count": 0,
+        "actual_thread_count": 2
+      },
+      {
+        "slug": "fk-catches",
+        "name": "FK catches",
+        "url": "https://www.fisherydb.com/forum/fk-catches",
+        "parent_slug": "catches",
+        "declared_thread_count": 0,
+        "actual_thread_count": 2
+      },
+      {
+        "slug": "inmarsat-c",
+        "name": "INMARSAT-C",
+        "url": "https://www.fisherydb.com/forum/inmarsat-c",
+        "parent_slug": "monitoring",
+        "declared_thread_count": 0,
+        "actual_thread_count": 2
+      },
+      {
+        "slug": "raritan",
+        "name": "Raritan",
+        "url": "https://www.fisherydb.com/forum/raritan",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 2
+      },
+      {
+        "slug": "transas",
+        "name": "TRANSAS",
+        "url": "https://www.fisherydb.com/forum/transas",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 2
+      },
+      {
+        "slug": "_cctv",
+        "name": "CCTV",
+        "url": "https://www.fisherydb.com/forum/_cctv",
+        "parent_slug": "equipment",
+        "declared_thread_count": 0,
+        "actual_thread_count": 1
+      },
+      {
+        "slug": "_gyro",
+        "name": "GYRO",
+        "url": "https://www.fisherydb.com/forum/_gyro",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 1
+      },
+      {
+        "slug": "brands",
+        "name": "Brands",
+        "url": "https://www.fisherydb.com/forum/brands",
+        "parent_slug": null,
+        "declared_thread_count": 0,
+        "actual_thread_count": 1
+      },
+      {
+        "slug": "catches",
+        "name": "Catches",
+        "url": "https://www.fisherydb.com/forum/catches",
+        "parent_slug": null,
+        "declared_thread_count": 0,
+        "actual_thread_count": 1
+      },
+      {
+        "slug": "fs-catches",
+        "name": "FS catches",
+        "url": "https://www.fisherydb.com/forum/fs-catches",
+        "parent_slug": "catches",
+        "declared_thread_count": 0,
+        "actual_thread_count": 1
+      },
+      {
+        "slug": "fsea-cathes",
+        "name": "FSea catches",
+        "url": "https://www.fisherydb.com/forum/fsea-cathes",
+        "parent_slug": "catches",
+        "declared_thread_count": 0,
+        "actual_thread_count": 1
+      },
+      {
+        "slug": "fv-catches",
+        "name": "FV catches",
+        "url": "https://www.fisherydb.com/forum/fv-catches",
+        "parent_slug": "catches",
+        "declared_thread_count": 0,
+        "actual_thread_count": 1
+      },
+      {
+        "slug": "jotron",
+        "name": "Jotron",
+        "url": "https://www.fisherydb.com/forum/jotron",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 1
+      },
+      {
+        "slug": "km-catches",
+        "name": "KM catches",
+        "url": "https://www.fisherydb.com/forum/km-catches",
+        "parent_slug": "catches",
+        "declared_thread_count": 0,
+        "actual_thread_count": 1
+      },
+      {
+        "slug": "monitoring",
+        "name": "Monitoring",
+        "url": "https://www.fisherydb.com/forum/monitoring",
+        "parent_slug": null,
+        "declared_thread_count": 0,
+        "actual_thread_count": 1
+      },
+      {
+        "slug": "3d-design",
+        "name": "3D DESIGN",
+        "url": "https://www.fisherydb.com/forum/3d-design",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 0
+      },
+      {
+        "slug": "_nmea",
+        "name": "NMEA",
+        "url": "https://www.fisherydb.com/forum/_nmea",
+        "parent_slug": "brands",
+        "declared_thread_count": 0,
+        "actual_thread_count": 0
+      },
+      {
+        "slug": "equipment",
+        "name": "Equipment",
+        "url": "https://www.fisherydb.com/forum/equipment",
+        "parent_slug": null,
+        "declared_thread_count": 0,
+        "actual_thread_count": 0
+      },
+      {
+        "slug": "fleet-orders",
+        "name": "Fleet Orders",
+        "url": "https://www.fisherydb.com/forum/fleet-orders",
+        "parent_slug": null,
+        "declared_thread_count": 0,
+        "actual_thread_count": 0
+      },
+      {
+        "slug": "issues-log-log-polomok",
+        "name": "Issues Log /// Лог поломок",
+        "url": "https://www.fisherydb.com/forum/issues-log-log-polomok",
+        "parent_slug": null,
+        "declared_thread_count": 0,
+        "actual_thread_count": 0
+      },
+      {
+        "slug": "km-orders",
+        "name": "KM orders",
+        "url": "https://www.fisherydb.com/forum/km-orders",
+        "parent_slug": "fleet-orders",
+        "declared_thread_count": 0,
+        "actual_thread_count": 0
+      },
+      {
+        "slug": "mrto-2022-2023-2024",
+        "name": "MRTO 2022-2023-2024",
+        "url": "https://www.fisherydb.com/forum/mrto-2022-2023-2024",
+        "parent_slug": null,
+        "declared_thread_count": 0,
+        "actual_thread_count": 0
+      }
+    ],
+    "duplicate_counts": {
+      "thread_ids": 0,
+      "thread_urls": 0,
+      "post_ids": 0,
+      "attachment_ids": 0
+    },
+    "attachment_issues": {
+      "missing_local_path_count": 15,
+      "missing_local_path": [
+        {
+          "id": "571566b3d5ed46ac",
+          "post_id": "63904b7ac846590012bf05f4",
+          "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/spectrum-icons/generated/content/content-exe-large.png",
+          "filename": "https://www.dropbox.com/static/metaserver/static/images/spectrum-icons/generated/content/content-exe-large.png",
+          "file_type": "png",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "e6d365fdbcab0d3a",
+          "post_id": "63904bf7c846590012bf0602",
+          "url": "https://static.wixstatic.com/media/https://www.dropbox.com/temp_thumb_from_token/s/t7kj22yo9ji2vy6?preserve_transparency=False&size=1200x1200&size_mode=4&unfurl=1",
+          "filename": "https://www.dropbox.com/temp_thumb_from_token/s/t7kj22yo9ji2vy6?preserve_transparency=False&size=1200x1200&size_mode=4&unfurl=1",
+          "file_type": "jpg",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "cd296a485858dda4",
+          "post_id": "64f97423096b680010e0603c",
+          "url": "https://static.wixstatic.com/media/https://lh3.googleusercontent.com/docs/AOD9vFrqw8ZYKD-MOTKhtsiiOdhRhrF9fwQYsDblmWxb8dLINTDIMwXq3Iusvz15TSWy_5RXVlic7JQuwWufRb68DABMoR7Xk5ZiNAoyl7SAvmE=w1200-h630-p",
+          "filename": "https://lh3.googleusercontent.com/docs/AOD9vFrqw8ZYKD-MOTKhtsiiOdhRhrF9fwQYsDblmWxb8dLINTDIMwXq3Iusvz15TSWy_5RXVlic7JQuwWufRb68DABMoR7Xk5ZiNAoyl7SAvmE=w1200-h630-p",
+          "file_type": "jpg",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "61c093d813a4ffba",
+          "post_id": "652ea3e808b50900101a892a",
+          "url": "https://static.wixstatic.com/media//web/wp-content/uploads/2023/09/CW-cockpit-edit2-1024x576.jpeg",
+          "filename": "/web/wp-content/uploads/2023/09/CW-cockpit-edit2-1024x576.jpeg",
+          "file_type": "jpeg",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "39daa829e631a508",
+          "post_id": "657b142feb80b000103846a5",
+          "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png",
+          "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png",
+          "file_type": "png",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "018468129b46f6af",
+          "post_id": "65856269edbdce00103f8be2",
+          "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+          "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+          "file_type": "png",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "6cd0f289f33e79ae",
+          "post_id": "65d1d91375cace00107afe1f",
+          "url": "https://static.wixstatic.com/media/https://sklep.inveo.com.pl/464-large_default/hero-web-sensor.jpg",
+          "filename": "https://sklep.inveo.com.pl/464-large_default/hero-web-sensor.jpg",
+          "file_type": "jpg",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "f1415970ea7ca3e0",
+          "post_id": "65d1d91375cace00107afe1f",
+          "url": "https://static.wixstatic.com/media/https://sklep.inveo.com.pl/465-large_default/nano-temp.jpg",
+          "filename": "https://sklep.inveo.com.pl/465-large_default/nano-temp.jpg",
+          "file_type": "jpg",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "9ff3d739b97599eb",
+          "post_id": "66012bee955a430010bb86ca",
+          "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-unknown-landscape.png",
+          "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-unknown-landscape.png",
+          "file_type": "png",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "03216d6541c3cb79",
+          "post_id": "6756e7fcbfcf59af44a39c91",
+          "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyJIAYbAsQMRp3uChL33eDSKsnfgAk5enp67GljQ70zUxuIV7-SEtkec7bJ-xqiyY9rxFa0uPxR9eWnu9ZwAaTeU36Ryi5p4COGD8pTgOkB1T_t4Ws4=w1200-h630-p",
+          "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyJIAYbAsQMRp3uChL33eDSKsnfgAk5enp67GljQ70zUxuIV7-SEtkec7bJ-xqiyY9rxFa0uPxR9eWnu9ZwAaTeU36Ryi5p4COGD8pTgOkB1T_t4Ws4=w1200-h630-p",
+          "file_type": "jpg",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "85083459de327a6f",
+          "post_id": "6756e7fcbfcf59af44a39c91",
+          "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyJTV47bX4zBZf-I8_00qr8Ocy70TwjoqSVals_rWoRm8It1mL4DY3CeFAkryYLEt1JOrr17bmze6dCAe-xnkAdUNEWy2tEvNoV4lc_muFsrUIlYhTRV=w1200-h630-p",
+          "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyJTV47bX4zBZf-I8_00qr8Ocy70TwjoqSVals_rWoRm8It1mL4DY3CeFAkryYLEt1JOrr17bmze6dCAe-xnkAdUNEWy2tEvNoV4lc_muFsrUIlYhTRV=w1200-h630-p",
+          "file_type": "jpg",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "9de9707b72cdde83",
+          "post_id": "6756e7fcbfcf59af44a39c91",
+          "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyK2Vp-Zzi2-UsSYHk82P_raw2AKZG2J91QLOmEBlCKfBlWJycVRK3Ax_wi-0w2waSxFgIUBHo9b_bWArysI6YRYJy4nHFwSYSVjCaUUAlq4m5II71SH=w1200-h630-p",
+          "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyK2Vp-Zzi2-UsSYHk82P_raw2AKZG2J91QLOmEBlCKfBlWJycVRK3Ax_wi-0w2waSxFgIUBHo9b_bWArysI6YRYJy4nHFwSYSVjCaUUAlq4m5II71SH=w1200-h630-p",
+          "file_type": "jpg",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "2e7ad6689588d54e",
+          "post_id": "6756e7fcbfcf59af44a39c91",
+          "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyL_YvNspuyyTXQ6e5Jnepj586hKfmZkb8atgbTGUAAlkARJEHb2KhBh1w5oGW8oMtmztLSO7QQ4wGuZ9xQ2qKf5D5PmhbJcrcKsxDHbnTySR2V4ekKM=w1200-h630-p",
+          "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyL_YvNspuyyTXQ6e5Jnepj586hKfmZkb8atgbTGUAAlkARJEHb2KhBh1w5oGW8oMtmztLSO7QQ4wGuZ9xQ2qKf5D5PmhbJcrcKsxDHbnTySR2V4ekKM=w1200-h630-p",
+          "file_type": "jpg",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "dcb843ba367d8a41",
+          "post_id": "6756e7fcbfcf59af44a39c91",
+          "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyLtmHKqLZKkkYydUEqTxwOzG5ggJIjfX0suzFR58qjA1zhnFBJFo_h5-LnSMO258WZ_lGu5WQyVLFf-bilumx1yGKDAFV7VfX9Up54W7DWyG9xurFbF=w1200-h630-p",
+          "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyLtmHKqLZKkkYydUEqTxwOzG5ggJIjfX0suzFR58qjA1zhnFBJFo_h5-LnSMO258WZ_lGu5WQyVLFf-bilumx1yGKDAFV7VfX9Up54W7DWyG9xurFbF=w1200-h630-p",
+          "file_type": "jpg",
+          "local_path": null,
+          "is_image": 1
+        },
+        {
+          "id": "5ed06830996c27d3",
+          "post_id": "6791f9b4b10608647a89287f",
+          "url": "https://static.wixstatic.com/media/https://radiochief.ru/wp-content/uploads/2014/12/sr_srg.jpg",
+          "filename": "https://radiochief.ru/wp-content/uploads/2014/12/sr_srg.jpg",
+          "file_type": "jpg",
+          "local_path": null,
+          "is_image": 1
+        }
+      ],
+      "broken_local_path_count": 0,
+      "broken_local_path": []
+    }
+  },
+  "thread_json": {
+    "file_count": 60,
+    "categories": [
+      "___fs",
+      "___km",
+      "___ks",
+      "___mk",
+      "__ais",
+      "__q-a",
+      "_cctv",
+      "_flir",
+      "_gyro",
+      "_nmea-1",
+      "_olex",
+      "belize-orbcomm",
+      "brands",
+      "catches",
+      "catsat",
+      "ff-issues",
+      "ff-orders",
+      "fk-catches",
+      "fk-orders",
+      "fleet-express",
+      "fs-catches",
+      "fs-issues",
+      "fs-orders",
+      "fsea-cathes",
+      "fsea-orders",
+      "ft-orders",
+      "furuno",
+      "fv-catches",
+      "fv-orders",
+      "honeywell-px4",
+      "inmarsat-c",
+      "jotron",
+      "km-catches",
+      "km-issues",
+      "ks-issues",
+      "lan-staff",
+      "marport",
+      "marport-1",
+      "maxar-insightexplorer",
+      "mk-issues",
+      "mn-issue",
+      "monitoring",
+      "mrto-obshchie-voprosy",
+      "mv-issues",
+      "network",
+      "obshchie-voprosy",
+      "other-equipment",
+      "other-equipment-on-board",
+      "raritan",
+      "rjabina",
+      "simrad",
+      "simrad-1",
+      "staff-only",
+      "starlink",
+      "starlink-iridium-bandle",
+      "transas",
+      "trawltec",
+      "triton",
+      "trondheim-issues",
+      "video-cctv"
+    ],
+    "totals": {
+      "threads": 589,
+      "posts": 1236,
+      "comments": 647,
+      "attachments": 1158,
+      "images": 1058,
+      "missing_local_path": 18
+    },
+    "files": [
+      {
+        "path": "output\\___fs\\threads.json",
+        "category": "___fs",
+        "declared_thread_count": 9,
+        "threads": 9,
+        "posts": 12,
+        "comments": 3,
+        "attachments": 3,
+        "images": 3,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\___km\\threads.json",
+        "category": "___km",
+        "declared_thread_count": 5,
+        "threads": 5,
+        "posts": 7,
+        "comments": 2,
+        "attachments": 12,
+        "images": 10,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\___ks\\threads.json",
+        "category": "___ks",
+        "declared_thread_count": 8,
+        "threads": 8,
+        "posts": 12,
+        "comments": 4,
+        "attachments": 28,
+        "images": 28,
+        "missing_local_path": 1
+      },
+      {
+        "path": "output\\___mk\\threads.json",
+        "category": "___mk",
+        "declared_thread_count": 12,
+        "threads": 12,
+        "posts": 18,
+        "comments": 6,
+        "attachments": 31,
+        "images": 27,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\__ais\\threads.json",
+        "category": "__ais",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 7,
+        "comments": 4,
+        "attachments": 2,
+        "images": 1,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\__q-a\\threads.json",
+        "category": "__q-a",
+        "declared_thread_count": 11,
+        "threads": 11,
+        "posts": 15,
+        "comments": 4,
+        "attachments": 18,
+        "images": 14,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\_cctv\\threads.json",
+        "category": "_cctv",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 1,
+        "images": 1,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\_flir\\threads.json",
+        "category": "_flir",
+        "declared_thread_count": 5,
+        "threads": 5,
+        "posts": 21,
+        "comments": 16,
+        "attachments": 14,
+        "images": 13,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\_gyro\\threads.json",
+        "category": "_gyro",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 2,
+        "images": 2,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\_nmea-1\\threads.json",
+        "category": "_nmea-1",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 3,
+        "comments": 0,
+        "attachments": 5,
+        "images": 2,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\_olex\\threads.json",
+        "category": "_olex",
+        "declared_thread_count": 4,
+        "threads": 4,
+        "posts": 7,
+        "comments": 3,
+        "attachments": 9,
+        "images": 9,
+        "missing_local_path": 1
+      },
+      {
+        "path": "output\\belize-orbcomm\\threads.json",
+        "category": "belize-orbcomm",
+        "declared_thread_count": 2,
+        "threads": 2,
+        "posts": 3,
+        "comments": 1,
+        "attachments": 12,
+        "images": 11,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\brands\\threads.json",
+        "category": "brands",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 1,
+        "images": 1,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\catches\\threads.json",
+        "category": "catches",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 1,
+        "images": 1,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\catsat\\threads.json",
+        "category": "catsat",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 7,
+        "comments": 4,
+        "attachments": 8,
+        "images": 8,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\ff-issues\\threads.json",
+        "category": "ff-issues",
+        "declared_thread_count": 25,
+        "threads": 25,
+        "posts": 38,
+        "comments": 13,
+        "attachments": 38,
+        "images": 38,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\ff-orders\\threads.json",
+        "category": "ff-orders",
+        "declared_thread_count": 5,
+        "threads": 5,
+        "posts": 5,
+        "comments": 0,
+        "attachments": 5,
+        "images": 5,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\fk-catches\\threads.json",
+        "category": "fk-catches",
+        "declared_thread_count": 2,
+        "threads": 2,
+        "posts": 2,
+        "comments": 0,
+        "attachments": 1,
+        "images": 1,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\fk-orders\\threads.json",
+        "category": "fk-orders",
+        "declared_thread_count": 20,
+        "threads": 20,
+        "posts": 31,
+        "comments": 11,
+        "attachments": 40,
+        "images": 34,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\fleet-express\\threads.json",
+        "category": "fleet-express",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 4,
+        "comments": 1,
+        "attachments": 4,
+        "images": 2,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\fs-catches\\threads.json",
+        "category": "fs-catches",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 0,
+        "images": 0,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\fs-issues\\threads.json",
+        "category": "fs-issues",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 112,
+        "comments": 82,
+        "attachments": 31,
+        "images": 31,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\fs-orders\\threads.json",
+        "category": "fs-orders",
+        "declared_thread_count": 8,
+        "threads": 8,
+        "posts": 11,
+        "comments": 3,
+        "attachments": 10,
+        "images": 10,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\fsea-cathes\\threads.json",
+        "category": "fsea-cathes",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 0,
+        "images": 0,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\fsea-orders\\threads.json",
+        "category": "fsea-orders",
+        "declared_thread_count": 23,
+        "threads": 23,
+        "posts": 37,
+        "comments": 14,
+        "attachments": 34,
+        "images": 28,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\ft-orders\\threads.json",
+        "category": "ft-orders",
+        "declared_thread_count": 10,
+        "threads": 10,
+        "posts": 22,
+        "comments": 12,
+        "attachments": 22,
+        "images": 22,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\furuno\\threads.json",
+        "category": "furuno",
+        "declared_thread_count": 17,
+        "threads": 17,
+        "posts": 24,
+        "comments": 7,
+        "attachments": 32,
+        "images": 29,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\fv-catches\\threads.json",
+        "category": "fv-catches",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 0,
+        "images": 0,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\fv-orders\\threads.json",
+        "category": "fv-orders",
+        "declared_thread_count": 13,
+        "threads": 13,
+        "posts": 13,
+        "comments": 0,
+        "attachments": 15,
+        "images": 13,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\honeywell-px4\\threads.json",
+        "category": "honeywell-px4",
+        "declared_thread_count": 16,
+        "threads": 16,
+        "posts": 21,
+        "comments": 5,
+        "attachments": 48,
+        "images": 36,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\inmarsat-c\\threads.json",
+        "category": "inmarsat-c",
+        "declared_thread_count": 2,
+        "threads": 2,
+        "posts": 2,
+        "comments": 0,
+        "attachments": 1,
+        "images": 1,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\jotron\\threads.json",
+        "category": "jotron",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 3,
+        "images": 1,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\km-catches\\threads.json",
+        "category": "km-catches",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 0,
+        "images": 0,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\km-issues\\threads.json",
+        "category": "km-issues",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 108,
+        "comments": 78,
+        "attachments": 55,
+        "images": 55,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\ks-issues\\threads.json",
+        "category": "ks-issues",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 174,
+        "comments": 144,
+        "attachments": 62,
+        "images": 61,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\lan-staff\\threads.json",
+        "category": "lan-staff",
+        "declared_thread_count": 12,
+        "threads": 12,
+        "posts": 14,
+        "comments": 2,
+        "attachments": 24,
+        "images": 22,
+        "missing_local_path": 5
+      },
+      {
+        "path": "output\\marport\\threads.json",
+        "category": "marport",
+        "declared_thread_count": 12,
+        "threads": 12,
+        "posts": 19,
+        "comments": 7,
+        "attachments": 19,
+        "images": 14,
+        "missing_local_path": 2
+      },
+      {
+        "path": "output\\marport-1\\threads.json",
+        "category": "marport-1",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 93,
+        "comments": 63,
+        "attachments": 8,
+        "images": 8,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\maxar-insightexplorer\\threads.json",
+        "category": "maxar-insightexplorer",
+        "declared_thread_count": 6,
+        "threads": 6,
+        "posts": 8,
+        "comments": 2,
+        "attachments": 11,
+        "images": 8,
+        "missing_local_path": 4
+      },
+      {
+        "path": "output\\mk-issues\\threads.json",
+        "category": "mk-issues",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 52,
+        "comments": 22,
+        "attachments": 130,
+        "images": 130,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\mn-issue\\threads.json",
+        "category": "mn-issue",
+        "declared_thread_count": 10,
+        "threads": 10,
+        "posts": 12,
+        "comments": 2,
+        "attachments": 0,
+        "images": 0,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\monitoring\\threads.json",
+        "category": "monitoring",
+        "declared_thread_count": 1,
+        "threads": 1,
+        "posts": 1,
+        "comments": 0,
+        "attachments": 0,
+        "images": 0,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\mrto-obshchie-voprosy\\threads.json",
+        "category": "mrto-obshchie-voprosy",
+        "declared_thread_count": 5,
+        "threads": 5,
+        "posts": 7,
+        "comments": 2,
+        "attachments": 10,
+        "images": 9,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\mv-issues\\threads.json",
+        "category": "mv-issues",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 71,
+        "comments": 41,
+        "attachments": 45,
+        "images": 43,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\network\\threads.json",
+        "category": "network",
+        "declared_thread_count": 12,
+        "threads": 12,
+        "posts": 17,
+        "comments": 5,
+        "attachments": 37,
+        "images": 37,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\obshchie-voprosy\\threads.json",
+        "category": "obshchie-voprosy",
+        "declared_thread_count": 11,
+        "threads": 11,
+        "posts": 21,
+        "comments": 10,
+        "attachments": 23,
+        "images": 22,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\other-equipment\\threads.json",
+        "category": "other-equipment",
+        "declared_thread_count": 30,
+        "threads": 30,
+        "posts": 46,
+        "comments": 16,
+        "attachments": 79,
+        "images": 70,
+        "missing_local_path": 4
+      },
+      {
+        "path": "output\\other-equipment-on-board\\threads.json",
+        "category": "other-equipment-on-board",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 3,
+        "comments": 0,
+        "attachments": 8,
+        "images": 8,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\raritan\\threads.json",
+        "category": "raritan",
+        "declared_thread_count": 2,
+        "threads": 2,
+        "posts": 2,
+        "comments": 0,
+        "attachments": 2,
+        "images": 2,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\rjabina\\threads.json",
+        "category": "rjabina",
+        "declared_thread_count": 9,
+        "threads": 9,
+        "posts": 12,
+        "comments": 3,
+        "attachments": 7,
+        "images": 2,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\simrad\\threads.json",
+        "category": "simrad",
+        "declared_thread_count": 10,
+        "threads": 10,
+        "posts": 15,
+        "comments": 5,
+        "attachments": 29,
+        "images": 25,
+        "missing_local_path": 1
+      },
+      {
+        "path": "output\\simrad-1\\threads.json",
+        "category": "simrad-1",
+        "declared_thread_count": 6,
+        "threads": 6,
+        "posts": 7,
+        "comments": 1,
+        "attachments": 4,
+        "images": 0,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\staff-only\\threads.json",
+        "category": "staff-only",
+        "declared_thread_count": 7,
+        "threads": 7,
+        "posts": 7,
+        "comments": 0,
+        "attachments": 1,
+        "images": 0,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\starlink\\threads.json",
+        "category": "starlink",
+        "declared_thread_count": 12,
+        "threads": 12,
+        "posts": 18,
+        "comments": 6,
+        "attachments": 57,
+        "images": 52,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\starlink-iridium-bandle\\threads.json",
+        "category": "starlink-iridium-bandle",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 3,
+        "comments": 0,
+        "attachments": 1,
+        "images": 1,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\transas\\threads.json",
+        "category": "transas",
+        "declared_thread_count": 2,
+        "threads": 2,
+        "posts": 4,
+        "comments": 2,
+        "attachments": 5,
+        "images": 5,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\trawltec\\threads.json",
+        "category": "trawltec",
+        "declared_thread_count": 3,
+        "threads": 3,
+        "posts": 6,
+        "comments": 3,
+        "attachments": 19,
+        "images": 14,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\triton\\threads.json",
+        "category": "triton",
+        "declared_thread_count": 7,
+        "threads": 7,
+        "posts": 8,
+        "comments": 1,
+        "attachments": 13,
+        "images": 11,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\trondheim-issues\\threads.json",
+        "category": "trondheim-issues",
+        "declared_thread_count": 24,
+        "threads": 24,
+        "posts": 59,
+        "comments": 35,
+        "attachments": 71,
+        "images": 70,
+        "missing_local_path": 0
+      },
+      {
+        "path": "output\\video-cctv\\threads.json",
+        "category": "video-cctv",
+        "declared_thread_count": 4,
+        "threads": 4,
+        "posts": 6,
+        "comments": 2,
+        "attachments": 7,
+        "images": 7,
+        "missing_local_path": 0
+      }
+    ],
+    "attachment_reference_keys_count": 1150,
+    "duplicate_attachment_reference_keys": [
+      {
+        "key": "output\\_nmea-1\\attachments\\Terminal1_9_b.zip",
+        "count": 2
+      },
+      {
+        "key": "output\\fk-orders\\attachments\\На обсуждение от 24.11.2024.docx",
+        "count": 2
+      },
+      {
+        "key": "output\\fk-orders\\attachments\\FK - PKRE - podtverzhdenie polucheniya snabzheniya (22.03.2024).xlsx",
+        "count": 2
+      },
+      {
+        "key": "output\\fk-orders\\attachments\\FK - PKRE - podtverzhdenie polucheniya snabzheniya (16.02.2024) (Correct).xlsx",
+        "count": 2
+      },
+      {
+        "key": "output\\fsea-orders\\attachments\\FSea Podtvergdenie snabgeniya.xlsx",
+        "count": 2
+      },
+      {
+        "key": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+        "count": 3
+      },
+      {
+        "key": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png",
+        "count": 2
+      }
+    ],
+    "missing_local_path": [
+      {
+        "category": "___ks",
+        "thread_id": "ks-mrto-2023-job-log",
+        "post_id": "64f97423096b680010e0603c",
+        "filename": "https://lh3.googleusercontent.com/docs/AOD9vFrqw8ZYKD-MOTKhtsiiOdhRhrF9fwQYsDblmWxb8dLINTDIMwXq3Iusvz15TSWy_5RXVlic7JQuwWufRb68DABMoR7Xk5ZiNAoyl7SAvmE=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh3.googleusercontent.com/docs/AOD9vFrqw8ZYKD-MOTKhtsiiOdhRhrF9fwQYsDblmWxb8dLINTDIMwXq3Iusvz15TSWy_5RXVlic7JQuwWufRb68DABMoR7Xk5ZiNAoyl7SAvmE=w1200-h630-p"
+      },
+      {
+        "category": "_olex",
+        "thread_id": "olex-new-chart-order-zakaz-novyh-kart-chartword-com",
+        "post_id": "652ea3e808b50900101a892a",
+        "filename": "/web/wp-content/uploads/2023/09/CW-cockpit-edit2-1024x576.jpeg",
+        "url": "https://static.wixstatic.com/media//web/wp-content/uploads/2023/09/CW-cockpit-edit2-1024x576.jpeg"
+      },
+      {
+        "category": "lan-staff",
+        "thread_id": "fleet-ipam-tables",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyLtmHKqLZKkkYydUEqTxwOzG5ggJIjfX0suzFR58qjA1zhnFBJFo_h5-LnSMO258WZ_lGu5WQyVLFf-bilumx1yGKDAFV7VfX9Up54W7DWyG9xurFbF=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyLtmHKqLZKkkYydUEqTxwOzG5ggJIjfX0suzFR58qjA1zhnFBJFo_h5-LnSMO258WZ_lGu5WQyVLFf-bilumx1yGKDAFV7VfX9Up54W7DWyG9xurFbF=w1200-h630-p"
+      },
+      {
+        "category": "lan-staff",
+        "thread_id": "fleet-ipam-tables",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyJIAYbAsQMRp3uChL33eDSKsnfgAk5enp67GljQ70zUxuIV7-SEtkec7bJ-xqiyY9rxFa0uPxR9eWnu9ZwAaTeU36Ryi5p4COGD8pTgOkB1T_t4Ws4=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyJIAYbAsQMRp3uChL33eDSKsnfgAk5enp67GljQ70zUxuIV7-SEtkec7bJ-xqiyY9rxFa0uPxR9eWnu9ZwAaTeU36Ryi5p4COGD8pTgOkB1T_t4Ws4=w1200-h630-p"
+      },
+      {
+        "category": "lan-staff",
+        "thread_id": "fleet-ipam-tables",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyL_YvNspuyyTXQ6e5Jnepj586hKfmZkb8atgbTGUAAlkARJEHb2KhBh1w5oGW8oMtmztLSO7QQ4wGuZ9xQ2qKf5D5PmhbJcrcKsxDHbnTySR2V4ekKM=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyL_YvNspuyyTXQ6e5Jnepj586hKfmZkb8atgbTGUAAlkARJEHb2KhBh1w5oGW8oMtmztLSO7QQ4wGuZ9xQ2qKf5D5PmhbJcrcKsxDHbnTySR2V4ekKM=w1200-h630-p"
+      },
+      {
+        "category": "lan-staff",
+        "thread_id": "fleet-ipam-tables",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyK2Vp-Zzi2-UsSYHk82P_raw2AKZG2J91QLOmEBlCKfBlWJycVRK3Ax_wi-0w2waSxFgIUBHo9b_bWArysI6YRYJy4nHFwSYSVjCaUUAlq4m5II71SH=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyK2Vp-Zzi2-UsSYHk82P_raw2AKZG2J91QLOmEBlCKfBlWJycVRK3Ax_wi-0w2waSxFgIUBHo9b_bWArysI6YRYJy4nHFwSYSVjCaUUAlq4m5II71SH=w1200-h630-p"
+      },
+      {
+        "category": "lan-staff",
+        "thread_id": "fleet-ipam-tables",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyJTV47bX4zBZf-I8_00qr8Ocy70TwjoqSVals_rWoRm8It1mL4DY3CeFAkryYLEt1JOrr17bmze6dCAe-xnkAdUNEWy2tEvNoV4lc_muFsrUIlYhTRV=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyJTV47bX4zBZf-I8_00qr8Ocy70TwjoqSVals_rWoRm8It1mL4DY3CeFAkryYLEt1JOrr17bmze6dCAe-xnkAdUNEWy2tEvNoV4lc_muFsrUIlYhTRV=w1200-h630-p"
+      },
+      {
+        "category": "marport",
+        "thread_id": "marport-scala-update-for-m2-mac-mini",
+        "post_id": "66012bee955a430010bb86ca",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-unknown-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-unknown-landscape.png"
+      },
+      {
+        "category": "marport",
+        "thread_id": "marport-latest-software-scala-mosa2-mosa2-exe",
+        "post_id": "658717b3351d900010e42bf2",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png"
+      },
+      {
+        "category": "maxar-insightexplorer",
+        "thread_id": "ie-software-update-to-v-2-6-1717",
+        "post_id": "65dc588987be1800104b80cf",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png"
+      },
+      {
+        "category": "maxar-insightexplorer",
+        "thread_id": "ie-latest-version-dec-2023-v-2-5-1603",
+        "post_id": "657b142feb80b000103846a5",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png"
+      },
+      {
+        "category": "maxar-insightexplorer",
+        "thread_id": "insight-explorer-v2-manual",
+        "post_id": "63904bf7c846590012bf0602",
+        "filename": "https://www.dropbox.com/temp_thumb_from_token/s/t7kj22yo9ji2vy6?preserve_transparency=False&size=1200x1200&size_mode=4&unfurl=1",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/temp_thumb_from_token/s/t7kj22yo9ji2vy6?preserve_transparency=False&size=1200x1200&size_mode=4&unfurl=1"
+      },
+      {
+        "category": "maxar-insightexplorer",
+        "thread_id": "ie-latest-software-dec-2022-v-2-4-1575",
+        "post_id": "63904b7ac846590012bf05f4",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/spectrum-icons/generated/content/content-exe-large.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/spectrum-icons/generated/content/content-exe-large.png"
+      },
+      {
+        "category": "other-equipment",
+        "thread_id": "razemy-rf-pl-259-u111-uhf-sma-n-series-bnc",
+        "post_id": "6791f9b4b10608647a89287f",
+        "filename": "https://radiochief.ru/wp-content/uploads/2014/12/sr_srg.jpg",
+        "url": "https://static.wixstatic.com/media/https://radiochief.ru/wp-content/uploads/2014/12/sr_srg.jpg"
+      },
+      {
+        "category": "other-equipment",
+        "thread_id": "temperatura-udalennyy-monitoring-dlya-shahty-gap-inveo",
+        "post_id": "65d1d91375cace00107afe1f",
+        "filename": "https://sklep.inveo.com.pl/464-large_default/hero-web-sensor.jpg",
+        "url": "https://static.wixstatic.com/media/https://sklep.inveo.com.pl/464-large_default/hero-web-sensor.jpg"
+      },
+      {
+        "category": "other-equipment",
+        "thread_id": "temperatura-udalennyy-monitoring-dlya-shahty-gap-inveo",
+        "post_id": "65d1d91375cace00107afe1f",
+        "filename": "https://sklep.inveo.com.pl/465-large_default/nano-temp.jpg",
+        "url": "https://static.wixstatic.com/media/https://sklep.inveo.com.pl/465-large_default/nano-temp.jpg"
+      },
+      {
+        "category": "other-equipment",
+        "thread_id": "scan-microsystem-sr03-01mk2-connection",
+        "post_id": "65856269edbdce00103f8be2",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png"
+      },
+      {
+        "category": "simrad",
+        "thread_id": "simrad-sn90-factory-image",
+        "post_id": "64c37747dd54460010156c5c",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png"
+      }
+    ]
+  },
+  "category_mapping": {
+    "exists": true,
+    "mapped_slug_count": 67,
+    "mapped_discourse_category_count": 58,
+    "thread_override_count": 1,
+    "mapping": {
+      "obshchie-voprosy": 14,
+      "__q-a": 14,
+      "staff-only": 3,
+      "furuno": 6,
+      "_nmea": 7,
+      "_nmea-1": 7,
+      "jotron": 8,
+      "_gyro": 9,
+      "simrad": 18,
+      "marport": 19,
+      "trawltec": 21,
+      "maxar-insightexplorer": 22,
+      "catsat": 23,
+      "rjabina": 30,
+      "starlink": 31,
+      "fleet-express": 33,
+      "_flir": 35,
+      "video-cctv": 36,
+      "_olex": 43,
+      "transas": 45,
+      "network": 55,
+      "lan-staff": 55,
+      "honeywell-px4": 48,
+      "raritan": 53,
+      "brands": 3,
+      "3d-design": 87,
+      "other-equipment": 10,
+      "monitoring": 34,
+      "triton": 38,
+      "belize-orbcomm": 37,
+      "inmarsat-c": 41,
+      "__ais": 40,
+      "equipment": 17,
+      "simrad-1": 18,
+      "marport-1": 19,
+      "_cctv": 36,
+      "starlink-iridium-bandle": 31,
+      "other-equipment-on-board": 57,
+      "issues-log-log-polomok": 64,
+      "mv-issues": 65,
+      "fs-issues": 68,
+      "km-issues": 69,
+      "ks-issues": 66,
+      "mk-issues": 67,
+      "ff-issues": 70,
+      "trondheim-issues": 71,
+      "mn-issue": 85,
+      "catches": 101,
+      "fsea-cathes": 104,
+      "fv-catches": 106,
+      "fs-catches": 109,
+      "km-catches": 103,
+      "fk-catches": 105,
+      "fleet-orders": 90,
+      "fsea-orders": 91,
+      "fv-orders": 93,
+      "fs-orders": 92,
+      "fk-orders": 94,
+      "km-orders": 95,
+      "ff-orders": 96,
+      "ft-orders": 97,
+      "mrto-2022-2023-2024": 74,
+      "mrto-obshchie-voprosy": 74,
+      "___ks": 76,
+      "___km": 79,
+      "___fs": 78,
+      "___mk": 77
+    },
+    "thread_overrides": {
+      "ixon-router-europa-engine-control": 51
+    },
+    "many_to_one_discourse_categories": [
+      {
+        "discourse_category_id": 3,
+        "source_slug_count": 2
+      },
+      {
+        "discourse_category_id": 7,
+        "source_slug_count": 2
+      },
+      {
+        "discourse_category_id": 14,
+        "source_slug_count": 2
+      },
+      {
+        "discourse_category_id": 18,
+        "source_slug_count": 2
+      },
+      {
+        "discourse_category_id": 19,
+        "source_slug_count": 2
+      },
+      {
+        "discourse_category_id": 31,
+        "source_slug_count": 2
+      },
+      {
+        "discourse_category_id": 36,
+        "source_slug_count": 2
+      },
+      {
+        "discourse_category_id": 55,
+        "source_slug_count": 2
+      },
+      {
+        "discourse_category_id": 74,
+        "source_slug_count": 2
+      }
+    ]
+  },
+  "discourse_categories": {
+    "exists": true,
+    "category_count": 88,
+    "ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      87,
+      88,
+      89
+    ],
+    "categories": [
+      {
+        "id": 4,
+        "name": "General",
+        "slug": "general",
+        "parent_category_id": null,
+        "topic_count": 1,
+        "post_count": 1
+      },
+      {
+        "id": 11,
+        "name": "Announcements / Объявления",
+        "slug": "annons",
+        "parent_category_id": 4,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 12,
+        "name": "Organizational / Организационные вопросы",
+        "slug": "organiz",
+        "parent_category_id": 4,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 13,
+        "name": "Agent Contacts / Контакты агентов",
+        "slug": "contacts",
+        "parent_category_id": 4,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 14,
+        "name": "General Q&A / Общие вопросы",
+        "slug": "qa",
+        "parent_category_id": 4,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 15,
+        "name": "Tips & Tricks / Советы и хитрости",
+        "slug": "tips",
+        "parent_category_id": 4,
+        "topic_count": 1,
+        "post_count": 5
+      },
+      {
+        "id": 16,
+        "name": "Best Practices / Лучшие практики",
+        "slug": "best",
+        "parent_category_id": 4,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 5,
+        "name": "Navigation & Positioning",
+        "slug": "types-of-equipment",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 6,
+        "name": "Furuno(Nav)",
+        "slug": "furuno1",
+        "parent_category_id": 5,
+        "topic_count": 1,
+        "post_count": 4
+      },
+      {
+        "id": 7,
+        "name": "NMEA",
+        "slug": "nmea",
+        "parent_category_id": 5,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 8,
+        "name": "Jotron",
+        "slug": "jot",
+        "parent_category_id": 5,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 9,
+        "name": "Gyro",
+        "slug": "gyro",
+        "parent_category_id": 5,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 10,
+        "name": "Other Nav",
+        "slug": "other",
+        "parent_category_id": 5,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 17,
+        "name": "Fish finding equip & tools",
+        "slug": "fishtools",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 18,
+        "name": "Simrad - Kongsberg",
+        "slug": "simrad",
+        "parent_category_id": 17,
+        "topic_count": 1,
+        "post_count": 3
+      },
+      {
+        "id": 19,
+        "name": "Marport",
+        "slug": "marport",
+        "parent_category_id": 17,
+        "topic_count": 1,
+        "post_count": 8
+      },
+      {
+        "id": 20,
+        "name": "Scanmar",
+        "slug": "scanmar",
+        "parent_category_id": 17,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 21,
+        "name": "Trawltec",
+        "slug": "trawl",
+        "parent_category_id": 17,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 22,
+        "name": "Garmin-IE",
+        "slug": "insightexp",
+        "parent_category_id": 17,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 23,
+        "name": "CatSat",
+        "slug": "catsat",
+        "parent_category_id": 17,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 24,
+        "name": "Other Fishing",
+        "slug": "otherfish",
+        "parent_category_id": 17,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 25,
+        "name": "Radio - Communications / Системы связи",
+        "slug": "radio",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 2,
+        "name": "Site Feedback",
+        "slug": "site-feedback",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 3,
+        "name": "Staff",
+        "slug": "staff",
+        "parent_category_id": null,
+        "topic_count": 3,
+        "post_count": 6
+      },
+      {
+        "id": 1,
+        "name": "Uncategorized",
+        "slug": "uncategorized",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 26,
+        "name": "ICOM",
+        "slug": "icom",
+        "parent_category_id": 25,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 27,
+        "name": "SAILOR",
+        "slug": "sailor",
+        "parent_category_id": 25,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 28,
+        "name": "Furuno",
+        "slug": "furuno",
+        "parent_category_id": 25,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 29,
+        "name": "GMDSS",
+        "slug": "gmdss",
+        "parent_category_id": 25,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 30,
+        "name": "GGS Rjabina",
+        "slug": "ggs-rjabina",
+        "parent_category_id": 25,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 31,
+        "name": "Starlink",
+        "slug": "starlink",
+        "parent_category_id": 25,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 32,
+        "name": "Iridium",
+        "slug": "iridium",
+        "parent_category_id": 25,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 33,
+        "name": "Other Communications",
+        "slug": "other-communications",
+        "parent_category_id": 25,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 34,
+        "name": "Visual & Monitoring / Визуальные системы",
+        "slug": "visual-monitoring",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 35,
+        "name": "FLIR",
+        "slug": "flir",
+        "parent_category_id": 34,
+        "topic_count": 5,
+        "post_count": 6
+      },
+      {
+        "id": 36,
+        "name": "CCTV",
+        "slug": "cctv",
+        "parent_category_id": 34,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 37,
+        "name": "Belize Orbcomm",
+        "slug": "belize-orbcomm",
+        "parent_category_id": 34,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 38,
+        "name": "Triton",
+        "slug": "triton",
+        "parent_category_id": 34,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 39,
+        "name": "Argos",
+        "slug": "argos",
+        "parent_category_id": 34,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 40,
+        "name": "AIS",
+        "slug": "ais",
+        "parent_category_id": 34,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 41,
+        "name": "Inm-C",
+        "slug": "inm-c",
+        "parent_category_id": 34,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 42,
+        "name": "Chart Systems / Картографические системы",
+        "slug": "chart-systems",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 43,
+        "name": "Olex",
+        "slug": "olex",
+        "parent_category_id": 42,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 44,
+        "name": "MaxSea TZ",
+        "slug": "maxsea-tz",
+        "parent_category_id": 42,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 45,
+        "name": "TRANSAS",
+        "slug": "transas",
+        "parent_category_id": 42,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 46,
+        "name": "Other Chart Systems",
+        "slug": "other-chart-systems",
+        "parent_category_id": 42,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 47,
+        "name": "Factory Equipment / Заводское оборудование",
+        "slug": "factory-equipment",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 48,
+        "name": "Label printers",
+        "slug": "label-printers",
+        "parent_category_id": 47,
+        "topic_count": 1,
+        "post_count": 3
+      },
+      {
+        "id": 49,
+        "name": "Scales / Весы",
+        "slug": "scales",
+        "parent_category_id": 47,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 50,
+        "name": "Strapping Machine / Страппинг машина",
+        "slug": "strapping-machine",
+        "parent_category_id": 47,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 51,
+        "name": "Engine control (Viking, Europa)",
+        "slug": "engine-control-viking-europa",
+        "parent_category_id": 47,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 52,
+        "name": "Ref Plant",
+        "slug": "ref-plant",
+        "parent_category_id": 47,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 53,
+        "name": "Other Factory Equipment",
+        "slug": "other-factory-equipment",
+        "parent_category_id": 47,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 54,
+        "name": "NETWORKS & IT / СЕТИ И IT",
+        "slug": "networks-it-it",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 55,
+        "name": "Network Setup / Настройка сетей",
+        "slug": "network-setup",
+        "parent_category_id": 54,
+        "topic_count": 1,
+        "post_count": 1
+      },
+      {
+        "id": 56,
+        "name": "Server Administration / Администрирование серверов",
+        "slug": "server-administration",
+        "parent_category_id": 54,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 57,
+        "name": "Software & Tools / ПО и утилиты",
+        "slug": "software-tools",
+        "parent_category_id": 54,
+        "topic_count": 2,
+        "post_count": 2
+      },
+      {
+        "id": 58,
+        "name": "Integration / Интеграция систем",
+        "slug": "integration",
+        "parent_category_id": 54,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 59,
+        "name": "KNOWLEDGE BASE / БАЗА ЗНАНИЙ",
+        "slug": "knowledge-base",
+        "parent_category_id": null,
+        "topic_count": 1,
+        "post_count": 2
+      },
+      {
+        "id": 60,
+        "name": "Equipment Specs / Технические характеристики",
+        "slug": "equipment-specs",
+        "parent_category_id": 59,
+        "topic_count": 1,
+        "post_count": 2
+      },
+      {
+        "id": 61,
+        "name": "Manuals Library / Библиотека мануалов",
+        "slug": "manuals-library",
+        "parent_category_id": 59,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 62,
+        "name": "Wiring Diagrams / Схемы подключения",
+        "slug": "wiring-diagrams",
+        "parent_category_id": 59,
+        "topic_count": 1,
+        "post_count": 1
+      },
+      {
+        "id": 63,
+        "name": "⚡WORLD SUPPORT⚡",
+        "slug": "world-support",
+        "parent_category_id": 59,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 64,
+        "name": "FLEET OPERATIONS / ОПЕРАЦИИ ФЛОТА",
+        "slug": "fleet-operations",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 65,
+        "name": "Fishing Vest - Issue Log",
+        "slug": "fishing-vest-issue-log",
+        "parent_category_id": 64,
+        "topic_count": 19,
+        "post_count": 27
+      },
+      {
+        "id": 66,
+        "name": "Fishing Sea - Issue Log",
+        "slug": "fishing-sea-issue-log",
+        "parent_category_id": 64,
+        "topic_count": 25,
+        "post_count": 45
+      },
+      {
+        "id": 67,
+        "name": "Fishing Koral - Issue Log",
+        "slug": "fishing-koral-issue-log",
+        "parent_category_id": 64,
+        "topic_count": 32,
+        "post_count": 53
+      },
+      {
+        "id": 68,
+        "name": "Fishing Success - Issue Log",
+        "slug": "fishing-success-issue-log",
+        "parent_category_id": 64,
+        "topic_count": 26,
+        "post_count": 33
+      },
+      {
+        "id": 69,
+        "name": "Kapitan Morgun - Issue Log",
+        "slug": "kapitan-morgun-issue-log",
+        "parent_category_id": 64,
+        "topic_count": 17,
+        "post_count": 26
+      },
+      {
+        "id": 70,
+        "name": "Fishing Force - Issue Log",
+        "slug": "fishing-force-issue-log",
+        "parent_category_id": 64,
+        "topic_count": 48,
+        "post_count": 109
+      },
+      {
+        "id": 71,
+        "name": "Fishing Tide - Issue Log",
+        "slug": "fishing-tide-issue-log",
+        "parent_category_id": 64,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 72,
+        "name": "Scombrus - Issue Log",
+        "slug": "scombrus-issue-log",
+        "parent_category_id": 64,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 73,
+        "name": "Harengus - Issue Log",
+        "slug": "harengus-issue-log",
+        "parent_category_id": 64,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 74,
+        "name": "MRTO / Межрейсовое техническое обслуживание",
+        "slug": "mrto",
+        "parent_category_id": null,
+        "topic_count": 1,
+        "post_count": 1
+      },
+      {
+        "id": 75,
+        "name": "Fishing Vest - MRTO Plans & Reports",
+        "slug": "fishing-vest-mrto-plans-reports",
+        "parent_category_id": 74,
+        "topic_count": 1,
+        "post_count": 1
+      },
+      {
+        "id": 76,
+        "name": "Fishing Sea - MRTO Plans & Reports",
+        "slug": "fishing-sea-mrto-plans-reports",
+        "parent_category_id": 74,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 77,
+        "name": "Fishing Koral - MRTO Plans & Reports",
+        "slug": "fishing-koral-mrto-plans-reports",
+        "parent_category_id": 74,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 78,
+        "name": "Fishing Success - MRTO Plans & Reports",
+        "slug": "fishing-success-mrto-plans-reports",
+        "parent_category_id": 74,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 79,
+        "name": "Kapitan Morgun - MRTO Plans & Reports",
+        "slug": "kapitan-morgun-mrto-plans-reports",
+        "parent_category_id": 74,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 80,
+        "name": "Fishing Force - MRTO Plans & Reports",
+        "slug": "fishing-force-mrto-plans-reports",
+        "parent_category_id": 74,
+        "topic_count": 1,
+        "post_count": 1
+      },
+      {
+        "id": 81,
+        "name": "Fishing Tide - MRTO Plans & Reports",
+        "slug": "fishing-tide-mrto-plans-reports",
+        "parent_category_id": 74,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 82,
+        "name": "Scombrus - MRTO Plans & Reports",
+        "slug": "scombrus-mrto-plans-reports",
+        "parent_category_id": 74,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 83,
+        "name": "Harengus - MRTO Plans & Reports",
+        "slug": "harengus-mrto-plans-reports",
+        "parent_category_id": 74,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 84,
+        "name": "Ideas & Improvements / Идеи и улучшения",
+        "slug": "ideas-improvements",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 85,
+        "name": "Marshal Novikov - Issue Log",
+        "slug": "mn",
+        "parent_category_id": 64,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 87,
+        "name": "3D Printing / 3D-Печать на судах",
+        "slug": "3d-printing-3d",
+        "parent_category_id": 4,
+        "topic_count": 9,
+        "post_count": 15
+      },
+      {
+        "id": 88,
+        "name": "Test Archive",
+        "slug": "test-archive",
+        "parent_category_id": null,
+        "topic_count": 0,
+        "post_count": 0
+      },
+      {
+        "id": 89,
+        "name": "Test Child",
+        "slug": "test-child",
+        "parent_category_id": 88,
+        "topic_count": 0,
+        "post_count": 0
+      }
+    ]
+  },
+  "category_reconciliation": {
+    "sqlite_category_count": 67,
+    "thread_json_category_count": 60,
+    "mapping_slug_count": 67,
+    "sqlite_without_thread_json": [
+      "3d-design",
+      "_nmea",
+      "equipment",
+      "fleet-orders",
+      "issues-log-log-polomok",
+      "km-orders",
+      "mrto-2022-2023-2024"
+    ],
+    "thread_json_without_sqlite": [],
+    "sqlite_without_mapping": [],
+    "mapping_without_sqlite": [],
+    "mapped_discourse_ids_missing_from_discourse_categories": [
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      101,
+      103,
+      104,
+      105,
+      106,
+      109
+    ],
+    "discourse_ids_referenced_by_mapping_count": 58
+  },
+  "attachment_reconciliation": {
+    "sqlite_attachment_rows": 1151,
+    "json_attachment_references": 1158,
+    "json_minus_sqlite": 7,
+    "local_output_attachment_or_image_files": 1135,
+    "local_files_by_extension": {
+      ".13mb": 1,
+      ".bin": 1,
+      ".doc": 1,
+      ".docx": 6,
+      ".jpg": 921,
+      ".pdf": 53,
+      ".png": 119,
+      ".txt": 5,
+      ".xlsx": 15,
+      ".zip": 13
+    },
+    "sqlite_missing_local_path_count": 15,
+    "sqlite_broken_local_path_count": 0,
+    "json_missing_local_path_count": 18,
+    "sqlite_missing_local_path": [
+      {
+        "id": "571566b3d5ed46ac",
+        "post_id": "63904b7ac846590012bf05f4",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/spectrum-icons/generated/content/content-exe-large.png",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/spectrum-icons/generated/content/content-exe-large.png",
+        "file_type": "png",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "e6d365fdbcab0d3a",
+        "post_id": "63904bf7c846590012bf0602",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/temp_thumb_from_token/s/t7kj22yo9ji2vy6?preserve_transparency=False&size=1200x1200&size_mode=4&unfurl=1",
+        "filename": "https://www.dropbox.com/temp_thumb_from_token/s/t7kj22yo9ji2vy6?preserve_transparency=False&size=1200x1200&size_mode=4&unfurl=1",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "cd296a485858dda4",
+        "post_id": "64f97423096b680010e0603c",
+        "url": "https://static.wixstatic.com/media/https://lh3.googleusercontent.com/docs/AOD9vFrqw8ZYKD-MOTKhtsiiOdhRhrF9fwQYsDblmWxb8dLINTDIMwXq3Iusvz15TSWy_5RXVlic7JQuwWufRb68DABMoR7Xk5ZiNAoyl7SAvmE=w1200-h630-p",
+        "filename": "https://lh3.googleusercontent.com/docs/AOD9vFrqw8ZYKD-MOTKhtsiiOdhRhrF9fwQYsDblmWxb8dLINTDIMwXq3Iusvz15TSWy_5RXVlic7JQuwWufRb68DABMoR7Xk5ZiNAoyl7SAvmE=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "61c093d813a4ffba",
+        "post_id": "652ea3e808b50900101a892a",
+        "url": "https://static.wixstatic.com/media//web/wp-content/uploads/2023/09/CW-cockpit-edit2-1024x576.jpeg",
+        "filename": "/web/wp-content/uploads/2023/09/CW-cockpit-edit2-1024x576.jpeg",
+        "file_type": "jpeg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "39daa829e631a508",
+        "post_id": "657b142feb80b000103846a5",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png",
+        "file_type": "png",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "018468129b46f6af",
+        "post_id": "65856269edbdce00103f8be2",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+        "file_type": "png",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "6cd0f289f33e79ae",
+        "post_id": "65d1d91375cace00107afe1f",
+        "url": "https://static.wixstatic.com/media/https://sklep.inveo.com.pl/464-large_default/hero-web-sensor.jpg",
+        "filename": "https://sklep.inveo.com.pl/464-large_default/hero-web-sensor.jpg",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "f1415970ea7ca3e0",
+        "post_id": "65d1d91375cace00107afe1f",
+        "url": "https://static.wixstatic.com/media/https://sklep.inveo.com.pl/465-large_default/nano-temp.jpg",
+        "filename": "https://sklep.inveo.com.pl/465-large_default/nano-temp.jpg",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "9ff3d739b97599eb",
+        "post_id": "66012bee955a430010bb86ca",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-unknown-landscape.png",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-unknown-landscape.png",
+        "file_type": "png",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "03216d6541c3cb79",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyJIAYbAsQMRp3uChL33eDSKsnfgAk5enp67GljQ70zUxuIV7-SEtkec7bJ-xqiyY9rxFa0uPxR9eWnu9ZwAaTeU36Ryi5p4COGD8pTgOkB1T_t4Ws4=w1200-h630-p",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyJIAYbAsQMRp3uChL33eDSKsnfgAk5enp67GljQ70zUxuIV7-SEtkec7bJ-xqiyY9rxFa0uPxR9eWnu9ZwAaTeU36Ryi5p4COGD8pTgOkB1T_t4Ws4=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "85083459de327a6f",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyJTV47bX4zBZf-I8_00qr8Ocy70TwjoqSVals_rWoRm8It1mL4DY3CeFAkryYLEt1JOrr17bmze6dCAe-xnkAdUNEWy2tEvNoV4lc_muFsrUIlYhTRV=w1200-h630-p",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyJTV47bX4zBZf-I8_00qr8Ocy70TwjoqSVals_rWoRm8It1mL4DY3CeFAkryYLEt1JOrr17bmze6dCAe-xnkAdUNEWy2tEvNoV4lc_muFsrUIlYhTRV=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "9de9707b72cdde83",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyK2Vp-Zzi2-UsSYHk82P_raw2AKZG2J91QLOmEBlCKfBlWJycVRK3Ax_wi-0w2waSxFgIUBHo9b_bWArysI6YRYJy4nHFwSYSVjCaUUAlq4m5II71SH=w1200-h630-p",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyK2Vp-Zzi2-UsSYHk82P_raw2AKZG2J91QLOmEBlCKfBlWJycVRK3Ax_wi-0w2waSxFgIUBHo9b_bWArysI6YRYJy4nHFwSYSVjCaUUAlq4m5II71SH=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "2e7ad6689588d54e",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyL_YvNspuyyTXQ6e5Jnepj586hKfmZkb8atgbTGUAAlkARJEHb2KhBh1w5oGW8oMtmztLSO7QQ4wGuZ9xQ2qKf5D5PmhbJcrcKsxDHbnTySR2V4ekKM=w1200-h630-p",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyL_YvNspuyyTXQ6e5Jnepj586hKfmZkb8atgbTGUAAlkARJEHb2KhBh1w5oGW8oMtmztLSO7QQ4wGuZ9xQ2qKf5D5PmhbJcrcKsxDHbnTySR2V4ekKM=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "dcb843ba367d8a41",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyLtmHKqLZKkkYydUEqTxwOzG5ggJIjfX0suzFR58qjA1zhnFBJFo_h5-LnSMO258WZ_lGu5WQyVLFf-bilumx1yGKDAFV7VfX9Up54W7DWyG9xurFbF=w1200-h630-p",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyLtmHKqLZKkkYydUEqTxwOzG5ggJIjfX0suzFR58qjA1zhnFBJFo_h5-LnSMO258WZ_lGu5WQyVLFf-bilumx1yGKDAFV7VfX9Up54W7DWyG9xurFbF=w1200-h630-p",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      },
+      {
+        "id": "5ed06830996c27d3",
+        "post_id": "6791f9b4b10608647a89287f",
+        "url": "https://static.wixstatic.com/media/https://radiochief.ru/wp-content/uploads/2014/12/sr_srg.jpg",
+        "filename": "https://radiochief.ru/wp-content/uploads/2014/12/sr_srg.jpg",
+        "file_type": "jpg",
+        "local_path": null,
+        "is_image": 1
+      }
+    ],
+    "json_missing_local_path": [
+      {
+        "category": "___ks",
+        "thread_id": "ks-mrto-2023-job-log",
+        "post_id": "64f97423096b680010e0603c",
+        "filename": "https://lh3.googleusercontent.com/docs/AOD9vFrqw8ZYKD-MOTKhtsiiOdhRhrF9fwQYsDblmWxb8dLINTDIMwXq3Iusvz15TSWy_5RXVlic7JQuwWufRb68DABMoR7Xk5ZiNAoyl7SAvmE=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh3.googleusercontent.com/docs/AOD9vFrqw8ZYKD-MOTKhtsiiOdhRhrF9fwQYsDblmWxb8dLINTDIMwXq3Iusvz15TSWy_5RXVlic7JQuwWufRb68DABMoR7Xk5ZiNAoyl7SAvmE=w1200-h630-p"
+      },
+      {
+        "category": "_olex",
+        "thread_id": "olex-new-chart-order-zakaz-novyh-kart-chartword-com",
+        "post_id": "652ea3e808b50900101a892a",
+        "filename": "/web/wp-content/uploads/2023/09/CW-cockpit-edit2-1024x576.jpeg",
+        "url": "https://static.wixstatic.com/media//web/wp-content/uploads/2023/09/CW-cockpit-edit2-1024x576.jpeg"
+      },
+      {
+        "category": "lan-staff",
+        "thread_id": "fleet-ipam-tables",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyLtmHKqLZKkkYydUEqTxwOzG5ggJIjfX0suzFR58qjA1zhnFBJFo_h5-LnSMO258WZ_lGu5WQyVLFf-bilumx1yGKDAFV7VfX9Up54W7DWyG9xurFbF=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyLtmHKqLZKkkYydUEqTxwOzG5ggJIjfX0suzFR58qjA1zhnFBJFo_h5-LnSMO258WZ_lGu5WQyVLFf-bilumx1yGKDAFV7VfX9Up54W7DWyG9xurFbF=w1200-h630-p"
+      },
+      {
+        "category": "lan-staff",
+        "thread_id": "fleet-ipam-tables",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyJIAYbAsQMRp3uChL33eDSKsnfgAk5enp67GljQ70zUxuIV7-SEtkec7bJ-xqiyY9rxFa0uPxR9eWnu9ZwAaTeU36Ryi5p4COGD8pTgOkB1T_t4Ws4=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyJIAYbAsQMRp3uChL33eDSKsnfgAk5enp67GljQ70zUxuIV7-SEtkec7bJ-xqiyY9rxFa0uPxR9eWnu9ZwAaTeU36Ryi5p4COGD8pTgOkB1T_t4Ws4=w1200-h630-p"
+      },
+      {
+        "category": "lan-staff",
+        "thread_id": "fleet-ipam-tables",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyL_YvNspuyyTXQ6e5Jnepj586hKfmZkb8atgbTGUAAlkARJEHb2KhBh1w5oGW8oMtmztLSO7QQ4wGuZ9xQ2qKf5D5PmhbJcrcKsxDHbnTySR2V4ekKM=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyL_YvNspuyyTXQ6e5Jnepj586hKfmZkb8atgbTGUAAlkARJEHb2KhBh1w5oGW8oMtmztLSO7QQ4wGuZ9xQ2qKf5D5PmhbJcrcKsxDHbnTySR2V4ekKM=w1200-h630-p"
+      },
+      {
+        "category": "lan-staff",
+        "thread_id": "fleet-ipam-tables",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyK2Vp-Zzi2-UsSYHk82P_raw2AKZG2J91QLOmEBlCKfBlWJycVRK3Ax_wi-0w2waSxFgIUBHo9b_bWArysI6YRYJy4nHFwSYSVjCaUUAlq4m5II71SH=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyK2Vp-Zzi2-UsSYHk82P_raw2AKZG2J91QLOmEBlCKfBlWJycVRK3Ax_wi-0w2waSxFgIUBHo9b_bWArysI6YRYJy4nHFwSYSVjCaUUAlq4m5II71SH=w1200-h630-p"
+      },
+      {
+        "category": "lan-staff",
+        "thread_id": "fleet-ipam-tables",
+        "post_id": "6756e7fcbfcf59af44a39c91",
+        "filename": "https://lh7-us.googleusercontent.com/docs/AHkbwyJTV47bX4zBZf-I8_00qr8Ocy70TwjoqSVals_rWoRm8It1mL4DY3CeFAkryYLEt1JOrr17bmze6dCAe-xnkAdUNEWy2tEvNoV4lc_muFsrUIlYhTRV=w1200-h630-p",
+        "url": "https://static.wixstatic.com/media/https://lh7-us.googleusercontent.com/docs/AHkbwyJTV47bX4zBZf-I8_00qr8Ocy70TwjoqSVals_rWoRm8It1mL4DY3CeFAkryYLEt1JOrr17bmze6dCAe-xnkAdUNEWy2tEvNoV4lc_muFsrUIlYhTRV=w1200-h630-p"
+      },
+      {
+        "category": "marport",
+        "thread_id": "marport-scala-update-for-m2-mac-mini",
+        "post_id": "66012bee955a430010bb86ca",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-unknown-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-unknown-landscape.png"
+      },
+      {
+        "category": "marport",
+        "thread_id": "marport-latest-software-scala-mosa2-mosa2-exe",
+        "post_id": "658717b3351d900010e42bf2",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png"
+      },
+      {
+        "category": "maxar-insightexplorer",
+        "thread_id": "ie-software-update-to-v-2-6-1717",
+        "post_id": "65dc588987be1800104b80cf",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png"
+      },
+      {
+        "category": "maxar-insightexplorer",
+        "thread_id": "ie-latest-version-dec-2023-v-2-5-1603",
+        "post_id": "657b142feb80b000103846a5",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-file-exe-landscape.png"
+      },
+      {
+        "category": "maxar-insightexplorer",
+        "thread_id": "insight-explorer-v2-manual",
+        "post_id": "63904bf7c846590012bf0602",
+        "filename": "https://www.dropbox.com/temp_thumb_from_token/s/t7kj22yo9ji2vy6?preserve_transparency=False&size=1200x1200&size_mode=4&unfurl=1",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/temp_thumb_from_token/s/t7kj22yo9ji2vy6?preserve_transparency=False&size=1200x1200&size_mode=4&unfurl=1"
+      },
+      {
+        "category": "maxar-insightexplorer",
+        "thread_id": "ie-latest-software-dec-2022-v-2-4-1575",
+        "post_id": "63904b7ac846590012bf05f4",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/spectrum-icons/generated/content/content-exe-large.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/spectrum-icons/generated/content/content-exe-large.png"
+      },
+      {
+        "category": "other-equipment",
+        "thread_id": "razemy-rf-pl-259-u111-uhf-sma-n-series-bnc",
+        "post_id": "6791f9b4b10608647a89287f",
+        "filename": "https://radiochief.ru/wp-content/uploads/2014/12/sr_srg.jpg",
+        "url": "https://static.wixstatic.com/media/https://radiochief.ru/wp-content/uploads/2014/12/sr_srg.jpg"
+      },
+      {
+        "category": "other-equipment",
+        "thread_id": "temperatura-udalennyy-monitoring-dlya-shahty-gap-inveo",
+        "post_id": "65d1d91375cace00107afe1f",
+        "filename": "https://sklep.inveo.com.pl/464-large_default/hero-web-sensor.jpg",
+        "url": "https://static.wixstatic.com/media/https://sklep.inveo.com.pl/464-large_default/hero-web-sensor.jpg"
+      },
+      {
+        "category": "other-equipment",
+        "thread_id": "temperatura-udalennyy-monitoring-dlya-shahty-gap-inveo",
+        "post_id": "65d1d91375cace00107afe1f",
+        "filename": "https://sklep.inveo.com.pl/465-large_default/nano-temp.jpg",
+        "url": "https://static.wixstatic.com/media/https://sklep.inveo.com.pl/465-large_default/nano-temp.jpg"
+      },
+      {
+        "category": "other-equipment",
+        "thread_id": "scan-microsystem-sr03-01mk2-connection",
+        "post_id": "65856269edbdce00103f8be2",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png"
+      },
+      {
+        "category": "simrad",
+        "thread_id": "simrad-sn90-factory-image",
+        "post_id": "64c37747dd54460010156c5c",
+        "filename": "https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png",
+        "url": "https://static.wixstatic.com/media/https://www.dropbox.com/static/metaserver/static/images/opengraph/opengraph-content-icon-folder-dropbox-landscape.png"
+      }
+    ]
+  },
+  "quality": {
+    "duplicate_counts": {
+      "thread_ids": 0,
+      "thread_urls": 0,
+      "post_ids": 0,
+      "attachment_ids": 0
+    },
+    "category_declared_thread_count_zero": 67,
+    "categories_with_threads": 60,
+    "database_path": "output\\forum_data.db"
+  },
+  "recommendations": [
+    "Review SQLite categories without threads.json before Wix/Discourse comparison.",
+    "Check mapped Discourse IDs that are not present in discourse_categories.json.",
+    "Resolve attachment records without local_path or mark them as remote-only.",
+    "Compare JSON attachment references against SQLite attachment rows."
+  ]
+}
